@@ -3,6 +3,7 @@ import os
 import logging
 import socket
 import multiprocessing
+import time
 
 file_log = logging.FileHandler("server.log")
 console_out = logging.StreamHandler()
@@ -14,8 +15,8 @@ logging.basicConfig(handlers=(file_log, console_out),
 
 ports = []
 
-scheduler_port = 9091
-
+scheduler_port = 9090
+resultsData = []
 
 # общие данные
 manager = multiprocessing.Manager()
@@ -35,6 +36,7 @@ def start_server(_ports):
     global free_images
     global shapes
     ports = _ports
+    time.sleep(1)
     listen(ports)
 
 
@@ -43,28 +45,27 @@ def listen_process(ip, port):
     sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
     sock.bind((ip, port))
     logging.info("Creating_server_ports..")
-    sock.listen()
+    sock.listen(1)
     while True:
         conn, addr = sock.accept()
         logging.info("Connected: " + str(addr))
-        while True:
-            global result
-            global lock
-
-            data = conn.recv(1024)
-
-            logging.info("SERVER Command " + data.decode() + " from " + str(addr))
-
-            if not data:
-                logging.error("Connection with " + str(addr) + " will be closed. Data not found")
-                break
-            
-            if data.decode() == 'get':
-                print("send file")
-                break
-
-        logging.info("Connection with " + str(addr) + " will be closed")
-        close_port(port, conn)
+        
+        data = conn.recv(1024)
+        logging.info("SERVER Command " + data.decode() + " from " + str(addr))
+        
+        if not data:
+            logging.error("Connection with " + str(addr) + " will be closed. Data not found")
+            break
+        
+        if data.decode() == 'push_audio':
+            logging.info("No DATA")
+            break
+        
+        result.append(data.decode())
+        
+        print('RESULTSDATA: ', result)
+        #logging.info("Connection with " + str(addr) + " will be closed")
+        #close_port(port, conn)
 
 
 def close_port(port, conn):
@@ -83,7 +84,6 @@ def close_port(port, conn):
 
 # запускаем на каждом порту в пуле прослушивание. Каждый порт слушает в отдельном процессе
 def listen(ports):
-    logging.info("Listening...")
     process = []
     for i in ports:
         main_process = multiprocessing.Process(target=listen_process, args=('', i))

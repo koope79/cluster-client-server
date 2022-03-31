@@ -41,9 +41,10 @@ def run_clients(hosts: str, config: str):
         host_file = open(hosts)
         config_file = open(config)
         path_to_client_file = config_file.readline().replace("\n", "")
-        for line in host_file:
-            os.system('python3 {}'.format(path_to_client_file))
-            logging.info("{} running!".format(line.replace('\n', '')))
+        for i in range(1,3):
+            #print('python3 /home/pi/nikolayDC/cluster-client-server/client{}.py'.format(i))
+            os.system('python3 /home/pi/nikolayDC/cluster-client-server/client{}.py'.format(i))
+            #logging.info("{} running!".format(line.replace('\n', '')))
     except:
         logging.error("error while create workers")
 
@@ -72,20 +73,20 @@ def port_listen(func, main_port, hosts, config):
     sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
     sock.bind(('', main_port))
     sock.listen()
+    logging.info("Port 9090 createrd!")
     while True:
         conn, addr = sock.accept()
         logging.info("Connected: " + str(addr))
         while True:
             data = conn.recv(1024)
-
             logging.info("Command " + data.decode() + " from " + str(addr))
 
             if not data:
                 break
-
+            
             func(data, conn, addr, hosts, config)
-
-        logging.info("Connection with " + str(addr) + " will be closed")
+        
+        logging.info("Scheduler Connection with " + str(addr) + " will be closed")
         conn.close()
 
 
