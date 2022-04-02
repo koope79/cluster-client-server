@@ -48,13 +48,20 @@ def tempo_port(ip, temp_port):
         conn, addr = sock.accept()
         data = conn.recv(4096)
         if data:
-            logging.info("Audio_on_Tempo_port")
+            logging.info("Audio on Tempo Port")
+            conn.send(data)
+            break
+
+        if not data:
+            logging.error("Connection with " + str(addr) + " will be closed. Data not found")
+            break
+
 
 # основной обработчик задач от клиентов
 def listen_process(ip, port):
     sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
     sock.bind((ip, port))
-    logging.info("Creating_server_ports..")
+    logging.info("Created server port {}!".format(port))
     sock.listen(1)
     while True:
         conn, addr = sock.accept()
@@ -71,7 +78,7 @@ def listen_process(ip, port):
         except Exception:
             logging.info("AUDIO_FILE")
             sock = socket.socket()
-            sock.connect(('', 9091))
+            sock.connect(('localhost', 9091))
             sock.send(data)
             sock.close()
             break
@@ -108,7 +115,6 @@ def listen(ports):
         main_process = multiprocessing.Process(target=listen_process, args=('', i))
         main_process.start()
         process.append(main_process)
-        logging.info("Started processing on port {} ".format(i))
 
     #TODO вынести в функцию или класс
 

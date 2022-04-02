@@ -73,7 +73,7 @@ def port_listen(func, main_port, hosts, config):
     sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
     sock.bind(('', main_port))
     sock.listen()
-    logging.info("Port 9090 createrd!")
+    logging.info("Port 9090 created!")
     while True:
         conn, addr = sock.accept()
         logging.info("Connected: " + str(addr))
