@@ -104,7 +104,7 @@ if __name__ == '__main__':
     parser = create_parser()
     args = parser.parse_args(sys.argv[1:])
     # инициализируем возможные порты
-    start_port = 9091
+    start_port = 9092
     for i in range(0, args.port):
         ports.append(start_port)
         # изначально все порты свободны

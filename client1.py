@@ -13,23 +13,33 @@ logging.basicConfig(handlers=(file_log, console_out),
                     level=logging.INFO)
 
 # main_port
-_port = 9091
+_port = 9092
 _addr = 'localhost'
-scheduler_port = 9090
-scheduler_addr = '127.0.0.1'
-server_addr = '127.0.0.1'
+#scheduler_port = 9090
+#scheduler_addr = '127.0.0.1'
+#server_addr = '127.0.0.1'
 
 # Рабочие не спят, работают 24/7
 # TODO сделать местный kill
 
 def my_start():
     logging.info("START Client1!")
-    # func for recognition
-    # if data:
-    result = 'push_audio'
-    send_result(result)
-    # if !data:
-    #func get file for recognition
+    #result = 'push_audioy'
+    #send_result(result)
+    send_audio()
+
+
+def send_audio():
+    sock = socket.socket()
+    sock.connect((_addr, _port))
+    file = open("rec1.wav", "rb")
+    while True:
+        file_data = file.read(4096)
+        sock.send(file_data)
+        if not file_data:
+            break
+    sock.close()
+    logging.info("File Sended")
 
 def send_result(result):
     sock = socket.socket()
@@ -43,6 +53,9 @@ def create_sock():
     
 
 my_start()
+
+
+
 
 def start_job():
     while True:

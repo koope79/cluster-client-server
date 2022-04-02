@@ -13,23 +13,27 @@ logging.basicConfig(handlers=(file_log, console_out),
                     level=logging.INFO)
 
 # main_port
-_port = 9092
+_port = 9093
 _addr = 'localhost'
-scheduler_port = 9090
-scheduler_addr = '127.0.0.1'
-server_addr = '127.0.0.1'
+#scheduler_port = 9090
+#scheduler_addr = '127.0.0.1'
+#server_addr = '127.0.0.1'
 
 # Рабочие не спят, работают 24/7
 # TODO сделать местный kill
 
+#def listen_tempo():
+    #sock = socket.socket()
+    #sock.connect((_addr, 9091))
+    #resp = sock.recv(4096)
+    #if resp:
+        #logging.info("PORT 9093 GOT FILE")
+
 def my_start():
-    logging.info("START Client1!")
-    # func for recognition
-    # if data:
+    logging.info("START Client2!")
     result = 'чайник'
     send_result(result)
-    # if !data:
-    #func get file for recognition
+    #listen_tempo()
 
 def send_result(result):
     sock = socket.socket()
@@ -43,6 +47,8 @@ def create_sock():
     
 
 my_start()
+
+
 
 def start_job():
     while True:

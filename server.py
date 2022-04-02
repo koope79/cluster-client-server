@@ -39,6 +39,16 @@ def start_server(_ports):
     time.sleep(1)
     listen(ports)
 
+def tempo_port(ip, temp_port):
+    sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+    sock.bind((ip, temp_port))
+    sock.listen()
+    logging.info("Started Tempo_Port 9091!")
+    while True:
+        conn, addr = sock.accept()
+        data = conn.recv(4096)
+        if data:
+            logging.info("Audio_on_Tempo_port")
 
 # основной обработчик задач от клиентов
 def listen_process(ip, port):
@@ -51,19 +61,24 @@ def listen_process(ip, port):
         logging.info("Connected: " + str(addr))
         
         data = conn.recv(1024)
-        logging.info("SERVER Command " + data.decode() + " from " + str(addr))
+        #logging.info(type(data))
         
-        if not data:
-            logging.error("Connection with " + str(addr) + " will be closed. Data not found")
+        try:
+            if data.decode():
+                logging.info("SERVER Command " + data.decode() + " from " + str(addr))
+                break
+            
+        except Exception:
+            logging.info("AUDIO_FILE")
+            sock = socket.socket()
+            sock.connect(('', 9091))
+            sock.send(data)
+            sock.close()
             break
         
-        if data.decode() == 'push_audio':
-            logging.info("No DATA")
-            break
+        #result.append(data.decode())
         
-        result.append(data.decode())
-        
-        print('RESULTSDATA: ', result)
+        #print('RESULTSDATA: ', result)
         #logging.info("Connection with " + str(addr) + " will be closed")
         #close_port(port, conn)
 
@@ -85,6 +100,10 @@ def close_port(port, conn):
 # запускаем на каждом порту в пуле прослушивание. Каждый порт слушает в отдельном процессе
 def listen(ports):
     process = []
+    tempo_process = multiprocessing.Process(target=tempo_port, args=('', 9091))
+    tempo_process.start()
+    process.append(tempo_process)
+    
     for i in ports:
         main_process = multiprocessing.Process(target=listen_process, args=('', i))
         main_process.start()
