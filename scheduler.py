@@ -31,11 +31,12 @@ def create_parser():
     parser = argparse.ArgumentParser()
     parser.add_argument('--host', help='path to file with hosts')
     parser.add_argument("-c", "--config", help='path to config file')
+    parser.add_argument("-i", "--items", help='path to file with names for audio')
     parser.add_argument("-p", "--port", help='count of ports in pull', default=2)
     return parser
 
 
-def run_clients(hosts: str, config: str):
+def run_client(hosts: str, config: str):
     try:
         logging.info("Run clients...")
         host_file = open(hosts)
@@ -51,7 +52,8 @@ def run_clients(hosts: str, config: str):
 
 def run_other_clients():
     try:
-        os.system('python3 /home/pi/nikolayDC/cluster-client-server/client2.py')
+        for i in range(2,4):
+            os.system('python3 /home/pi/nikolayDC/cluster-client-server/client{}.py'.format(i))
         logging.info("running_others_clients!")
     except:
         logging.error("error while run others clients")
@@ -63,7 +65,7 @@ def server_port_listen(data, conn, addr, hosts, config):
     # сигнал от сервера, что процессы на портах создались,
     # можно запускать рабочих
     if data.decode() == 'port_created':
-        run_clients(hosts, config)
+        run_client(hosts, config)
     if data.decode() == 'got_file_from_client':
         run_other_clients()
     
@@ -100,13 +102,12 @@ def port_listen(func, main_port, hosts, config):
         conn.close()
 
 
-# TODO сделать местный kill
 def start_scheduler(hosts: str, config: str):
     server_port_listen_process = multiprocessing.Process(target=port_listen,
                                                          args=(server_port_listen, 9090, hosts, config))
     server_port_listen_process.start()
     server.start_server(ports)
-    # рабочие запускаются после сигнала сервера
+    # клиент запускается после сигнала сервера
 
 
 if __name__ == '__main__':

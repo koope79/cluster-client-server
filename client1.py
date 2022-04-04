@@ -45,9 +45,6 @@ def send_result(result):
     sock.send(result.encode())
     sock.close()
     logging.info("SENDED1 RESULT")
-
-def create_sock():
-    sock = socket.socket()
     
 
 my_start()

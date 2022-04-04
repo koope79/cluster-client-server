@@ -4,6 +4,7 @@ import logging
 import socket
 import multiprocessing
 import time
+from _thread import start_new_thread
 
 file_log = logging.FileHandler("server.log")
 console_out = logging.StreamHandler()
@@ -33,24 +34,35 @@ def start_server(_ports):
     time.sleep(1)
     listen(ports)
 
+def threaded(conn, addr, file_name):
+    file = open(file_name, "rb")
+    print("new_thread: {}".format(addr))
+    while True:
+        try:
+            res = conn.recv(4096)
+            if res.decode() == 'client_work':
+                while True:
+                    file_data = file.read(4096)
+                    conn.send(file_data)
+                    if not file_data:
+                        file.close()
+                        break
+                conn.close()
+                break
+            
+        except Exception as e:
+            print(e)
+
 def tempo_port(ip, temp_port, file_name):
     sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+    #sock.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1)
     sock.bind((ip, temp_port))
     sock.listen()
-    file = open(file_name, "rb")
     logging.info("Started Tempo_Port 9091!")
     while True:
         conn, addr = sock.accept()
-        res = conn.recv(4096)
-        
-        if res.decode() == 'client2_work':
-            while True:
-                file_data = file.read(4096)
-                conn.send(file_data)
-                if not file_data:
-                    break
-            conn.close()
-            logging.info("FILE SENDED FROM TEMPO")
+        start_new_thread(threaded,(conn, addr, file_name, ))
+        logging.info("FILE SENDED FROM TEMPO")
 
 def create_tempo_port(file_name):
     tempo_process = multiprocessing.Process(target=tempo_port, args=('', 9091, file_name))
@@ -71,16 +83,17 @@ def listen_process(ip, port):
             
         while True:
             data = conn.recv(4096)
-            #logging.info(type(data))
             try:
                 if data.decode():
                     logging.info("SERVER Command " + data.decode() + " from " + str(addr))
+                    #result.append(data.decode())
                     break
                     
             except Exception:
                 file.write(data)
                 if not data:
                     break
+                
             finally:
                 if not data:
                     logging.info("AUDIO FILE ON SERVER")
@@ -92,8 +105,6 @@ def listen_process(ip, port):
                     sock.send('got_file_from_client'.encode())
                     sock.close()
                     break
-                    
-        #result.append(data.decode())
         
         #print('RESULTSDATA: ', result)
         #logging.info("Connection with " + str(addr) + " will be closed")
@@ -121,8 +132,6 @@ def listen(ports):
         main_process = multiprocessing.Process(target=listen_process, args=('', i))
         main_process.start()
         process.append(main_process)
-
-    #TODO вынести в функцию или класс
 
     # сообщаем планировщику, что все процессы запустились и можно продолжать работу
     sock = socket.socket()
