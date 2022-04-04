@@ -20,11 +20,7 @@ resultsData = []
 
 # общие данные
 manager = multiprocessing.Manager()
-# TODO fix it
 result = manager.list([0])
-# TODO fix it
-free_images = manager.list([0])
-shapes = manager.list()
 
 # для каждой операции свой лок, т.к. общие данные не пересакаются в разных операциях
 returnLock = multiprocessing.Lock()
@@ -33,29 +29,33 @@ getLock = multiprocessing.Lock()
 
 def start_server(_ports):
     # записываем порты
-    global free_images
-    global shapes
     ports = _ports
     time.sleep(1)
     listen(ports)
 
-def tempo_port(ip, temp_port):
+def tempo_port(ip, temp_port, file_name):
     sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
     sock.bind((ip, temp_port))
     sock.listen()
+    file = open(file_name, "rb")
     logging.info("Started Tempo_Port 9091!")
     while True:
         conn, addr = sock.accept()
-        data = conn.recv(4096)
-        if data:
-            logging.info("Audio on Tempo Port")
-            conn.send(data)
-            break
+        res = conn.recv(4096)
+        
+        if res.decode() == 'client2_work':
+            while True:
+                file_data = file.read(4096)
+                conn.send(file_data)
+                if not file_data:
+                    break
+            conn.close()
+            logging.info("FILE SENDED FROM TEMPO")
 
-        if not data:
-            logging.error("Connection with " + str(addr) + " will be closed. Data not found")
-            break
-
+def create_tempo_port(file_name):
+    tempo_process = multiprocessing.Process(target=tempo_port, args=('', 9091, file_name))
+    tempo_process.start()
+    #tempo_process.join()
 
 # основной обработчик задач от клиентов
 def listen_process(ip, port):
@@ -63,26 +63,36 @@ def listen_process(ip, port):
     sock.bind((ip, port))
     logging.info("Created server port {}!".format(port))
     sock.listen(1)
+    file_name = "TEST1.wav"
+    file = open(file_name, "wb")
     while True:
         conn, addr = sock.accept()
         logging.info("Connected: " + str(addr))
-        
-        data = conn.recv(1024)
-        #logging.info(type(data))
-        
-        try:
-            if data.decode():
-                logging.info("SERVER Command " + data.decode() + " from " + str(addr))
-                break
             
-        except Exception:
-            logging.info("AUDIO_FILE")
-            sock = socket.socket()
-            sock.connect(('localhost', 9091))
-            sock.send(data)
-            sock.close()
-            break
-        
+        while True:
+            data = conn.recv(4096)
+            #logging.info(type(data))
+            try:
+                if data.decode():
+                    logging.info("SERVER Command " + data.decode() + " from " + str(addr))
+                    break
+                    
+            except Exception:
+                file.write(data)
+                if not data:
+                    break
+            finally:
+                if not data:
+                    logging.info("AUDIO FILE ON SERVER")
+                    file.close()
+                    time.sleep(1)
+                    create_tempo_port(file_name)
+                    sock = socket.socket()
+                    sock.connect(('', scheduler_port))
+                    sock.send('got_file_from_client'.encode())
+                    sock.close()
+                    break
+                    
         #result.append(data.decode())
         
         #print('RESULTSDATA: ', result)
@@ -107,10 +117,6 @@ def close_port(port, conn):
 # запускаем на каждом порту в пуле прослушивание. Каждый порт слушает в отдельном процессе
 def listen(ports):
     process = []
-    tempo_process = multiprocessing.Process(target=tempo_port, args=('', 9091))
-    tempo_process.start()
-    process.append(tempo_process)
-    
     for i in ports:
         main_process = multiprocessing.Process(target=listen_process, args=('', i))
         main_process.start()

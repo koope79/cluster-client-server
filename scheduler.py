@@ -41,13 +41,20 @@ def run_clients(hosts: str, config: str):
         host_file = open(hosts)
         config_file = open(config)
         path_to_client_file = config_file.readline().replace("\n", "")
-        for i in range(1,3):
+        os.system('python3 /home/pi/nikolayDC/cluster-client-server/client1.py')
+        #for i in range(1,3):
             #print('python3 /home/pi/nikolayDC/cluster-client-server/client{}.py'.format(i))
-            os.system('python3 /home/pi/nikolayDC/cluster-client-server/client{}.py'.format(i))
+            #os.system('python3 /home/pi/nikolayDC/cluster-client-server/client{}.py'.format(i))
             #logging.info("{} running!".format(line.replace('\n', '')))
     except:
         logging.error("error while create workers")
 
+def run_other_clients():
+    try:
+        os.system('python3 /home/pi/nikolayDC/cluster-client-server/client2.py')
+        logging.info("running_others_clients!")
+    except:
+        logging.error("error while run others clients")
 
 # вечное прослушаваие порта в одном экземпляре, но в отдельном процессе
 
@@ -57,6 +64,9 @@ def server_port_listen(data, conn, addr, hosts, config):
     # можно запускать рабочих
     if data.decode() == 'port_created':
         run_clients(hosts, config)
+    if data.decode() == 'got_file_from_client':
+        run_other_clients()
+    
 
     if data.decode() == 'return_port':
         conn.sendall('ready'.encode())

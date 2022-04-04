@@ -1,40 +1,45 @@
 # Рабочий - забирает картинки с сервера, распознает их и отдает обратно
 import socket
-import sys
-import cv2
 import logging
+import multiprocessing
+import os
 
 file_log = logging.FileHandler("client.log")
 console_out = logging.StreamHandler()
 
 logging.basicConfig(handlers=(file_log, console_out),
-                    format='[%(asctime)s | %(levelname)s | CLIENT]: %(message)s',
+                    format='[%(asctime)s | %(levelname)s | CLIENT_2]: %(message)s',
                     datefmt='%m.%d.%Y %H:%M:%S',
                     level=logging.INFO)
 
 # main_port
 _port = 9093
-_tempo_port = 9091
 _addr = 'localhost'
 #scheduler_port = 9090
 #scheduler_addr = '127.0.0.1'
 #server_addr = '127.0.0.1'
 
-
 def listen_tempo():
     sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-    sock.connect((_addr, _tempo_port))
+    sock.connect((_addr, 9091))
+    sock.send('client2_work'.encode())
+    file = open("CLIENT_AUDIO1.wav", "wb")
     while True:
         data = sock.recv(4096)
-        if data:
-            logging.info("PORT 9093 GOT FILE")
+        file.write(data)
+        if not data:
             break
+            
+    file.close()
+    sock.close()
+    logging.info("CLIENT 2 GOT FILE")
 
 def my_start():
     logging.info("START Client2!")
     #result = 'чайник'
     #send_result(result)
     listen_tempo()
+    #client_port_process.join()
 
 def send_result(result):
     sock = socket.socket()
