@@ -66,6 +66,7 @@ def server_port_listen(data, conn, addr, hosts, config):
     # можно запускать рабочих
     if data.decode() == 'port_created':
         run_client(hosts, config)
+        
     if data.decode() == 'got_file_from_client':
         run_other_clients()
     

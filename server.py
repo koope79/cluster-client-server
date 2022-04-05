@@ -21,12 +21,13 @@ resultsData = []
 
 # общие данные
 manager = multiprocessing.Manager()
-result = manager.list([0])
+result = manager.list()
 
 # для каждой операции свой лок, т.к. общие данные не пересакаются в разных операциях
 returnLock = multiprocessing.Lock()
 getLock = multiprocessing.Lock()
 
+names_mas = manager.list()
 
 def start_server(_ports):
     # записываем порты
@@ -53,7 +54,7 @@ def threaded(conn, addr, file_name):
         except Exception as e:
             print(e)
 
-def tempo_port(ip, temp_port, file_name):
+def tempo_port(ip, temp_port):
     sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
     #sock.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1)
     sock.bind((ip, temp_port))
@@ -61,7 +62,8 @@ def tempo_port(ip, temp_port, file_name):
     logging.info("Started Tempo_Port 9091!")
     while True:
         conn, addr = sock.accept()
-        start_new_thread(threaded,(conn, addr, file_name, ))
+        last_name_audio = names_mas[-1]
+        start_new_thread(threaded,(conn, addr, last_name_audio, ))
         logging.info("FILE SENDED FROM TEMPO")
 
 def create_tempo_port(file_name):
@@ -74,19 +76,21 @@ def listen_process(ip, port):
     sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
     sock.bind((ip, port))
     logging.info("Created server port {}!".format(port))
-    sock.listen(1)
-    file_name = "TEST1.wav"
-    file = open(file_name, "wb")
+    sock.listen()
+    i = 0
     while True:
         conn, addr = sock.accept()
         logging.info("Connected: " + str(addr))
-            
+        file_name = "SERVER_AUDIO{}.wav".format(i)
+        file = open(file_name, "wb")
+        i += 1
+        #print("GOT IT")
         while True:
             data = conn.recv(4096)
             try:
                 if data.decode():
                     logging.info("SERVER Command " + data.decode() + " from " + str(addr))
-                    #result.append(data.decode())
+                    result.append(data.decode())
                     break
                     
             except Exception:
@@ -98,18 +102,21 @@ def listen_process(ip, port):
                 if not data:
                     logging.info("AUDIO FILE ON SERVER")
                     file.close()
-                    time.sleep(1)
-                    create_tempo_port(file_name)
-                    sock = socket.socket()
-                    sock.connect(('', scheduler_port))
-                    sock.send('got_file_from_client'.encode())
-                    sock.close()
+                    names_mas.append(file_name)
+                    time.sleep(2)
+                    #create_tempo_port(file_name)
+                    start_clients()
                     break
         
-        #print('RESULTSDATA: ', result)
-        #logging.info("Connection with " + str(addr) + " will be closed")
-        #close_port(port, conn)
+    print('RESULTSDATA: ', result)
+    #logging.info("Connection with " + str(addr) + " will be closed")
+    #close_port(port, conn)
 
+def start_clients():
+    sock = socket.socket()
+    sock.connect(('', scheduler_port))
+    sock.send('got_file_from_client'.encode())
+    sock.close()
 
 def close_port(port, conn):
     port = port
@@ -132,6 +139,9 @@ def listen(ports):
         main_process = multiprocessing.Process(target=listen_process, args=('', i))
         main_process.start()
         process.append(main_process)
+        
+    tempo_process = multiprocessing.Process(target=tempo_port, args=('', 9091,))
+    tempo_process.start()
 
     # сообщаем планировщику, что все процессы запустились и можно продолжать работу
     sock = socket.socket()

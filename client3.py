@@ -1,7 +1,6 @@
 # Рабочий - забирает картинки с сервера, распознает их и отдает обратно
 import socket
 import logging
-import multiprocessing
 import os
 
 file_log = logging.FileHandler("client.log")
@@ -23,7 +22,7 @@ def listen_tempo():
     sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
     sock.connect((_addr, 9091))
     sock.send('client_work'.encode())
-    file = open("CLIENT_AUDIO2.wav", "wb")
+    file = open("cl3/CLIENT_3_AUDIO.wav", "wb")
     while True:
         data = sock.recv(4096)
         file.write(data)
