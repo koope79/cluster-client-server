@@ -38,7 +38,7 @@ def create_parser():
 
 def run_client(hosts: str, config: str):
     try:
-        logging.info("Run clients...")
+        logging.info("Run client...")
         host_file = open(hosts)
         config_file = open(config)
         path_to_client_file = config_file.readline().replace("\n", "")
@@ -54,7 +54,7 @@ def run_other_clients():
     try:
         for i in range(2,4):
             os.system('python3 /home/pi/nikolayDC/cluster-client-server/client{}.py'.format(i))
-        logging.info("running_others_clients!")
+        #logging.info("running_others_clients!")
     except:
         logging.error("error while run others clients")
 
@@ -69,24 +69,13 @@ def server_port_listen(data, conn, addr, hosts, config):
         
     if data.decode() == 'got_file_from_client':
         run_other_clients()
-    
-
-    if data.decode() == 'return_port':
-        conn.sendall('ready'.encode())
-        port_number = conn.recv(4)
-        condition.acquire()
-        free_ports.append(int.from_bytes(port_number, 'big'))
-        logging.info("Count of free ports {}".format(len(free_ports)))
-        # рассылаем сообщение о поступлении нового свободного порта
-        condition.notify()
-        condition.release()
 
 
 def port_listen(func, main_port, hosts, config):
     sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
     sock.bind(('', main_port))
     sock.listen()
-    logging.info("Port 9090 created!")
+    logging.info("Port 9090 created.")
     while True:
         conn, addr = sock.accept()
         logging.info("Connected: " + str(addr))

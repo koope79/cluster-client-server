@@ -28,10 +28,10 @@ def listen_tempo():
         file.write(data)
         if not data:
             file.close()
+            logging.info("CLIENT 3 GOT FILE")
             break
             
     sock.close()
-    logging.info("CLIENT 3 GOT FILE")
 
 def my_start():
     logging.info("START Client3!")

@@ -42,11 +42,11 @@ def listen_tempo():
         file.write(data)
         if not data:
             file.close()
+            logging.info("CLIENT 2 GOT FILE")
             recognition(file_name)
             break
             
     sock.close()
-    logging.info("CLIENT 2 GOT FILE")
 
 def my_start():
     logging.info("START Client2!")
