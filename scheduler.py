@@ -20,55 +20,42 @@ logging.basicConfig(handlers=(file_log, console_out),
 # TODO сделать массив
 manager = multiprocessing.Manager()
 ports = []
-free_ports = manager.list()
-# информация, на каком портц какой клиент сидит
-# TODO Manager
-port_client = {}
-condition = multiprocessing.Condition()
 
 
 def create_parser():
     parser = argparse.ArgumentParser()
     parser.add_argument('--host', help='path to file with hosts')
     parser.add_argument("-c", "--config", help='path to config file')
-    parser.add_argument("-i", "--items", help='path to file with names for audio')
-    parser.add_argument("-p", "--port", help='count of ports in pull', default=2)
+    parser.add_argument("-p", "--port", help='count of ports in pull', default=3)
     return parser
 
 
-def run_client(hosts: str, config: str):
+def run_client():
     try:
         logging.info("Run client...")
-        host_file = open(hosts)
-        config_file = open(config)
-        path_to_client_file = config_file.readline().replace("\n", "")
         os.system('python3 /home/pi/nikolayDC/cluster-client-server/client1.py')
-        #for i in range(1,3):
-            #print('python3 /home/pi/nikolayDC/cluster-client-server/client{}.py'.format(i))
-            #os.system('python3 /home/pi/nikolayDC/cluster-client-server/client{}.py'.format(i))
-            #logging.info("{} running!".format(line.replace('\n', '')))
     except:
         logging.error("error while create workers")
 
-def run_other_clients():
+
+def run_other_clients(hosts: str, config: str):
     try:
+        # host_file = open(hosts)
+        # config_file = open(config)
+        # path_to_client_file = config_file.readline().replace("\n", "")
         for i in range(2,4):
             os.system('python3 /home/pi/nikolayDC/cluster-client-server/client{}.py'.format(i))
-        #logging.info("running_others_clients!")
     except:
         logging.error("error while run others clients")
 
-# вечное прослушаваие порта в одном экземпляре, но в отдельном процессе
 
 def server_port_listen(data, conn, addr, hosts, config):
-    global free_ports
-    # сигнал от сервера, что процессы на портах создались,
-    # можно запускать рабочих
+    # сигнал от сервера, что процессы на портах создались
     if data.decode() == 'port_created':
-        run_client(hosts, config)
+        run_client()
         
     if data.decode() == 'got_file_from_client':
-        run_other_clients()
+        run_other_clients(hosts, config)
 
 
 def port_listen(func, main_port, hosts, config):
@@ -101,14 +88,11 @@ def start_scheduler(hosts: str, config: str):
 
 
 if __name__ == '__main__':
-    # global free_ports
     parser = create_parser()
     args = parser.parse_args(sys.argv[1:])
     # инициализируем возможные порты
     start_port = 9092
     for i in range(0, args.port):
         ports.append(start_port)
-        # изначально все порты свободны
-        free_ports.append(start_port)
         start_port += 1
     start_scheduler(args.host, args.config)

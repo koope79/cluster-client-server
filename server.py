@@ -1,5 +1,5 @@
 # Сервер - держатель общих данных, он их отдает и сохраняет процессобезопасно
-import os
+
 import logging
 import socket
 import multiprocessing
@@ -37,7 +37,7 @@ def start_server(_ports):
 def threaded(conn, addr, file_name):
     global count
     file = open(file_name, "rb")
-    print("new_thread: {}".format(addr))
+    #print("new_thread: {}".format(addr))
     while True:
         try:
             res = conn.recv(4096)
@@ -61,9 +61,9 @@ def threaded(conn, addr, file_name):
         except Exception as e:
             print(e)
 
+# промежуточный порт, служащий для рассылки файлов
 def tempo_port(ip, temp_port):
     sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-    #sock.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1)
     sock.bind((ip, temp_port))
     sock.listen()
     logging.info("Started Tempo_Port 9091!")
@@ -75,10 +75,8 @@ def tempo_port(ip, temp_port):
             count = 2
         th_lock.release()
         last_name_audio = names_mas[-1]
-        #print(last_name_audio)
         _thread.start_new_thread(threaded,(conn, addr, last_name_audio,))
         
-
 # основной обработчик задач от клиентов
 def listen_process(ip, port):
     sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
@@ -117,13 +115,11 @@ def listen_process(ip, port):
         print('RESULTSDATA: ', result)
         #conn.close()
         
-
 def start_clients():
     sock = socket.socket()
     sock.connect(('', scheduler_port))
     sock.send('got_file_from_client'.encode())
     sock.close()
-
 
 # запускаем на каждом порту в пуле прослушивание. Каждый порт слушает в отдельном процессе
 def listen(ports):
