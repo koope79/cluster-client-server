@@ -1,0 +1,19 @@
+#JSGF V1.0;
+
+grammar cmdGrammar;
+
+public <basicCmd> = [<start>] (<cmdHeater> | <cmdLamp> | <cmdWindow>);
+<cmdHeater> = <heater> <actionHeater> <parameterHeater>;
+<heater> = (обогреватель);
+<actionHeater> = (сделай);
+<parameterHeater> = (горячее|холоднее);
+
+<cmdLamp> = <actionLamp> <directionLamp> <lamp>;
+<actionLamp> = (включи|выключи);
+<directionLamp> = (правую|левую|центральную);
+<lamp> = (лампу);
+
+<cmdWindow> = <actionWindow> <window>;
+<actionWindow> = (открой|закрой);
+<window> = (окно);
+<start> = (умный дом | дом);
