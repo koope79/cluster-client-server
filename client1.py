@@ -21,7 +21,7 @@ _addr = 'localhost'
 
 
 def recognition():
-    for i in range(1,13):
+    for i in range(10,13):
         name_file = 'recs/rec{}.wav'.format(i)
         cmd = 'cd /home/pi/pocketsphinx-5prealpha/src/programs && pocketsphinx_continuous -samprate 16000 -hmm /home/pi/pocketsphinx-5prealpha/model/ru-model/zero_ru.cd_semi_4000 -jsgf /home/pi/settingsGramma/gram/my_rus_pi.gram -dict /home/pi/settingsGramma/gram/my_rus_pi_dict -infile /home/pi/nikolayDC/cluster-client-server/{} -logfn /dev/null'.format(name_file)
         output = run(cmd, stdout=PIPE, stderr=STDOUT, text=True, shell=True)

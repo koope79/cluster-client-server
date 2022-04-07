@@ -12,7 +12,7 @@ logging.basicConfig(handlers=(file_log, console_out),
                     level=logging.INFO)
 
 # main_port
-_port = 9094
+_port = 9093
 _addr = 'localhost'
 
 

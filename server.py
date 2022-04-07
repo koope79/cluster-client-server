@@ -55,28 +55,37 @@ def threaded(conn, addr, file_name):
                 if count == 0:
                     names_mas.remove(file_name)
                 th_lock.release()
-                conn.close() 
+                conn.close()
+                #logging.info("Connected closed: " + str(addr))
                 break
             
         except Exception as e:
             print(e)
 
 # промежуточный порт, служащий для рассылки файлов
-def tempo_port(ip, temp_port):
+def tempo_port(ip, temp_port, circle):
     sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
     sock.bind((ip, temp_port))
     sock.listen()
-    logging.info("Started Tempo_Port 9091!")
+    logging.info("Started Tempo_Port {}!".format(temp_port))
     while True:
         global count
         conn, addr = sock.accept()
+        #logging.info("Connected: " + str(addr))
         th_lock.acquire()
         if count == 0:
-            count = 2
+            count = circle
         th_lock.release()
         last_name_audio = names_mas[-1]
         _thread.start_new_thread(threaded,(conn, addr, last_name_audio,))
-        
+        #logging.info("Connected close: " + str(addr))
+
+def start_clients():
+    sock = socket.socket()
+    sock.connect(('', scheduler_port))
+    sock.send('got_file_from_client'.encode())
+    sock.close()
+    
 # основной обработчик задач от клиентов
 def listen_process(ip, port):
     sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
@@ -87,7 +96,7 @@ def listen_process(ip, port):
     while True:
         conn, addr = sock.accept()
         logging.info("Connected: " + str(addr))
-        file_name = "SERVER_AUDIO{}.wav".format(i)
+        file_name = "SERVER_AUDIO_{}.wav".format(i)
         file = open(file_name, "wb")
         i += 1
         while True:
@@ -111,15 +120,9 @@ def listen_process(ip, port):
                     time.sleep(2)
                     start_clients()
                     break
-                
+        #logging.info("Connected closed: " + str(addr))        
         print('RESULTSDATA: ', result)
-        #conn.close()
-        
-def start_clients():
-    sock = socket.socket()
-    sock.connect(('', scheduler_port))
-    sock.send('got_file_from_client'.encode())
-    sock.close()
+        conn.close()
 
 # запускаем на каждом порту в пуле прослушивание. Каждый порт слушает в отдельном процессе
 def listen(ports):
@@ -129,15 +132,15 @@ def listen(ports):
         main_process.start()
         process.append(main_process)
         
-    tempo_process = multiprocessing.Process(target=tempo_port, args=('', 9091,))
+    tempo_process = multiprocessing.Process(target=tempo_port, args=('', 9091, len(ports),))
     tempo_process.start()
+    process.append(tempo_process)
 
     # сообщаем планировщику, что все процессы запустились и можно продолжать работу
     sock = socket.socket()
     sock.connect(('', scheduler_port))
     sock.send('port_created'.encode())
     sock.close()
-    tempo_process.join()
     for i in process:
         # ожидаем завершения процессов, иначе общие данные пропадут (Manager умирает при убивании основного процесса)
         i.join()
