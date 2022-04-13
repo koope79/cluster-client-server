@@ -1,0 +1,11 @@
+#JSGF V1.0;
+
+grammar cmdGrammar;
+
+public <basicCmd> = [<start>] (<cmdLamp>);
+
+<cmdLamp> = <actionLamp> <directionLamp> <lamp>;
+<actionLamp> = (включи|выключи);
+<directionLamp> = (правую|левую|центральную);
+<lamp> = (лампу);
+<start> = (умный дом | дом);

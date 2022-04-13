@@ -1,0 +1,9 @@
+#JSGF V1.0;
+
+grammar cmdGrammar;
+
+public <basicCmd> = [<start>] (<cmdWindow>);
+<cmdWindow> = <actionWindow> <window>;
+<actionWindow> = (открой|закрой);
+<window> = (окно);
+<start> = (умный дом | дом);
