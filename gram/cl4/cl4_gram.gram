@@ -2,11 +2,11 @@
 
 grammar cmdGrammar;
 
-public <basicCmd> = [<start>] (<cmdTimer>);
+public <basicCmd> = <start> <cmdTimer>;
 <cmdTimer> = <actionTimer> <timer> <pretext> <parameterTimer> <time>;
 <timer> = (таймер);
 <actionTimer> = (включи|поставь);
 <parameterTimer> = (одну|пять|десять);
 <time> = (минут|минуту);
 <pretext> = (на);
-<start> = (умный дом | дом);
+<start> = [умный дом | дом];

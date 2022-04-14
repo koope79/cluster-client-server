@@ -2,8 +2,8 @@
 
 grammar cmdGrammar;
 
-public <basicCmd> = [<start>] (<cmdWindow>);
+public <basicCmd> = <start> <cmdWindow>;
 <cmdWindow> = <actionWindow> <window>;
 <actionWindow> = (открой|закрой);
 <window> = (окно);
-<start> = (умный дом | дом);
+<start> = [умный дом | дом];
