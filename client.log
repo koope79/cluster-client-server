@@ -2573,3 +2573,715 @@
 [04.11.2022 14:40:51 | INFO | CLIENT_2]: CLIENT 2 GOT FILE
 [04.11.2022 14:40:51 | INFO | CLIENT_3]: START Client_3!
 [04.11.2022 14:40:51 | INFO | CLIENT_3]: CLIENT 3 GOT FILE
+[04.14.2022 15:25:25 | INFO | CLIENT_1]: START Client1!
+[04.14.2022 15:25:25 | INFO | CLIENT_1]: File Sended
+[04.14.2022 15:25:25 | INFO | CLIENT_1]: File Sended
+[04.14.2022 15:25:26 | INFO | CLIENT_1]: File Sended
+[04.14.2022 15:25:27 | INFO | CLIENT_2]: START Client_2!
+[04.14.2022 15:25:27 | INFO | CLIENT_2]: CLIENT 2 GOT FILE
+[04.14.2022 15:25:28 | INFO | CLIENT_3]: START Client_3!
+[04.14.2022 15:25:28 | INFO | CLIENT_3]: CLIENT 3 GOT FILE
+[04.14.2022 15:25:29 | INFO | CLIENT_2]: START Client_2!
+[04.14.2022 15:25:29 | INFO | CLIENT_2]: CLIENT 2 GOT FILE
+[04.14.2022 15:25:30 | INFO | CLIENT_3]: START Client_3!
+[04.14.2022 15:25:30 | INFO | CLIENT_3]: CLIENT 3 GOT FILE
+[04.14.2022 15:31:07 | INFO | CLIENT_1]: START Client1!
+[04.14.2022 15:31:08 | INFO | CLIENT_1]: File Sended
+[04.14.2022 15:31:08 | INFO | CLIENT_1]: File Sended
+[04.14.2022 15:31:09 | INFO | CLIENT_1]: File Sended
+[04.14.2022 15:31:10 | INFO | CLIENT_2]: START Client_2!
+[04.14.2022 15:31:10 | INFO | CLIENT_2]: CLIENT 2 GOT FILE
+[04.14.2022 15:31:11 | INFO | CLIENT_3]: START Client_3!
+[04.14.2022 15:31:11 | INFO | CLIENT_3]: CLIENT 3 GOT FILE
+[04.14.2022 15:31:12 | INFO | CLIENT_2]: START Client_2!
+[04.14.2022 15:31:12 | INFO | CLIENT_2]: CLIENT 2 GOT FILE
+[04.14.2022 15:31:13 | INFO | CLIENT_3]: START Client_3!
+[04.14.2022 15:31:13 | INFO | CLIENT_3]: CLIENT 3 GOT FILE
+[04.14.2022 15:33:12 | INFO | CLIENT_1]: START Client1!
+[04.14.2022 15:33:13 | INFO | CLIENT_1]: File Sended
+[04.14.2022 15:33:13 | INFO | CLIENT_1]: File Sended
+[04.14.2022 15:33:15 | INFO | CLIENT_2]: START Client_2!
+[04.14.2022 15:33:15 | INFO | CLIENT_2]: CLIENT 2 GOT FILE
+[04.14.2022 15:33:15 | INFO | CLIENT_3]: START Client_3!
+[04.14.2022 15:33:15 | INFO | CLIENT_3]: CLIENT 3 GOT FILE
+[04.14.2022 15:33:17 | INFO | CLIENT_2]: START Client_2!
+[04.14.2022 15:33:17 | INFO | CLIENT_2]: CLIENT 2 GOT FILE
+[04.14.2022 15:33:17 | INFO | CLIENT_3]: START Client_3!
+[04.14.2022 15:33:17 | INFO | CLIENT_3]: CLIENT 3 GOT FILE
+[04.14.2022 15:34:02 | INFO | CLIENT_1]: START Client1!
+[04.14.2022 15:34:03 | INFO | CLIENT_1]: File Sended
+[04.14.2022 15:34:03 | INFO | CLIENT_1]: File Sended
+[04.14.2022 15:34:05 | INFO | CLIENT_2]: START Client_2!
+[04.14.2022 15:34:05 | INFO | CLIENT_3]: START Client_3!
+[04.14.2022 15:37:33 | INFO | CLIENT_1]: START Client1!
+[04.14.2022 15:37:34 | INFO | CLIENT_1]: File Sended
+[04.14.2022 15:37:34 | INFO | CLIENT_1]: File Sended
+[04.14.2022 15:37:36 | INFO | CLIENT_2]: START Client_2!
+[04.14.2022 15:37:36 | INFO | CLIENT_2]: CLIENT 2 GOT FILE
+[04.14.2022 15:37:36 | INFO | CLIENT_3]: START Client_3!
+[04.14.2022 15:37:36 | INFO | CLIENT_3]: CLIENT 3 GOT FILE
+[04.14.2022 15:37:38 | INFO | CLIENT_2]: START Client_2!
+[04.14.2022 15:37:38 | INFO | CLIENT_2]: CLIENT 2 GOT FILE
+[04.14.2022 15:37:38 | INFO | CLIENT_3]: START Client_3!
+[04.14.2022 15:37:38 | INFO | CLIENT_3]: CLIENT 3 GOT FILE
+[04.14.2022 15:38:56 | INFO | CLIENT_1]: START Client1!
+[04.14.2022 15:38:57 | INFO | CLIENT_1]: SENDED1 RESULT
+[04.14.2022 15:38:57 | INFO | CLIENT_1]: SENDED1 RESULT
+[04.14.2022 15:46:17 | INFO | CLIENT_1]: START Client1!
+[04.14.2022 15:46:17 | INFO | CLIENT_1]: File Sended
+[04.14.2022 15:46:18 | INFO | CLIENT_1]: File Sended
+[04.14.2022 15:46:19 | INFO | CLIENT_2]: START Client_2!
+[04.14.2022 15:46:19 | INFO | CLIENT_2]: CLIENT 2 GOT FILE
+[04.14.2022 15:46:20 | INFO | CLIENT_3]: START Client_3!
+[04.14.2022 15:46:20 | INFO | CLIENT_3]: CLIENT 3 GOT FILE
+[04.14.2022 15:46:21 | INFO | CLIENT_2]: START Client_2!
+[04.14.2022 15:46:21 | INFO | CLIENT_2]: CLIENT 2 GOT FILE
+[04.14.2022 15:46:22 | INFO | CLIENT_3]: START Client_3!
+[04.14.2022 15:46:22 | INFO | CLIENT_3]: CLIENT 3 GOT FILE
+[04.14.2022 15:47:09 | INFO | CLIENT_1]: START Client1!
+[04.14.2022 15:47:10 | INFO | CLIENT_1]: SENDED1 RESULT
+[04.14.2022 15:47:10 | INFO | CLIENT_1]: SENDED1 RESULT
+[04.14.2022 15:47:14 | INFO | CLIENT_1]: START Client1!
+[04.14.2022 15:47:15 | INFO | CLIENT_1]: SENDED1 RESULT
+[04.14.2022 15:47:15 | INFO | CLIENT_1]: SENDED1 RESULT
+[04.14.2022 15:49:45 | INFO | CLIENT_1]: START Client1!
+[04.14.2022 15:49:46 | INFO | CLIENT_1]: SENDED1 RESULT
+[04.14.2022 15:49:46 | INFO | CLIENT_1]: SENDED1 RESULT
+[04.14.2022 15:49:47 | INFO | CLIENT_1]: SENDED1 RESULT
+[04.14.2022 15:49:47 | INFO | CLIENT_1]: SENDED1 RESULT
+[04.14.2022 15:49:48 | INFO | CLIENT_1]: SENDED1 RESULT
+[04.14.2022 15:49:48 | INFO | CLIENT_1]: SENDED1 RESULT
+[04.14.2022 15:49:48 | INFO | CLIENT_1]: SENDED1 RESULT
+[04.14.2022 15:49:49 | INFO | CLIENT_1]: SENDED1 RESULT
+[04.14.2022 15:49:49 | INFO | CLIENT_1]: SENDED1 RESULT
+[04.14.2022 15:49:50 | INFO | CLIENT_1]: SENDED1 RESULT
+[04.14.2022 15:54:00 | INFO | CLIENT_1]: START Client1!
+[04.14.2022 15:54:01 | INFO | CLIENT_1]: SENDED1 RESULT
+[04.14.2022 15:54:01 | INFO | CLIENT_1]: File Sended
+[04.14.2022 15:54:02 | INFO | CLIENT_1]: File Sended
+[04.14.2022 15:54:02 | INFO | CLIENT_1]: SENDED1 RESULT
+[04.14.2022 15:54:03 | INFO | CLIENT_1]: SENDED1 RESULT
+[04.14.2022 15:54:03 | INFO | CLIENT_1]: File Sended
+[04.14.2022 15:54:03 | INFO | CLIENT_1]: File Sended
+[04.14.2022 15:54:04 | INFO | CLIENT_1]: File Sended
+[04.14.2022 15:54:04 | INFO | CLIENT_1]: File Sended
+[04.14.2022 15:54:05 | INFO | CLIENT_1]: SENDED1 RESULT
+[04.14.2022 15:54:05 | INFO | CLIENT_2]: START Client_2!
+[04.14.2022 15:54:05 | INFO | CLIENT_2]: CLIENT 2 GOT FILE
+[04.14.2022 15:54:05 | INFO | CLIENT_2]: SENDED_2 RESULT
+[04.14.2022 15:54:05 | INFO | CLIENT_3]: START Client_3!
+[04.14.2022 15:54:05 | INFO | CLIENT_3]: CLIENT 3 GOT FILE
+[04.14.2022 15:54:06 | INFO | CLIENT_2]: START Client_2!
+[04.14.2022 15:54:06 | INFO | CLIENT_2]: CLIENT 2 GOT FILE
+[04.14.2022 15:54:06 | INFO | CLIENT_2]: SENDED_2 RESULT
+[04.14.2022 15:54:06 | INFO | CLIENT_3]: START Client_3!
+[04.14.2022 15:54:06 | INFO | CLIENT_3]: CLIENT 3 GOT FILE
+[04.14.2022 15:57:25 | INFO | CLIENT_1]: START Client1!
+[04.14.2022 15:57:26 | INFO | CLIENT_1]: SENDED1 RESULT
+[04.14.2022 15:57:26 | INFO | CLIENT_1]: File Sended
+[04.14.2022 15:57:26 | INFO | CLIENT_1]: File Sended
+[04.14.2022 15:57:27 | INFO | CLIENT_1]: SENDED1 RESULT
+[04.14.2022 15:57:27 | INFO | CLIENT_1]: SENDED1 RESULT
+[04.14.2022 15:57:28 | INFO | CLIENT_1]: File Sended
+[04.14.2022 15:57:28 | INFO | CLIENT_1]: File Sended
+[04.14.2022 15:57:29 | INFO | CLIENT_1]: File Sended
+[04.14.2022 15:57:29 | INFO | CLIENT_1]: File Sended
+[04.14.2022 15:57:29 | INFO | CLIENT_1]: SENDED1 RESULT
+[04.14.2022 15:57:29 | INFO | CLIENT_2]: START Client_2!
+[04.14.2022 15:57:29 | INFO | CLIENT_2]: CLIENT 2 GOT FILE
+[04.14.2022 15:57:30 | INFO | CLIENT_2]: SENDED_2 RESULT
+[04.14.2022 15:57:30 | INFO | CLIENT_3]: START Client_3!
+[04.14.2022 15:57:30 | INFO | CLIENT_3]: CLIENT 3 GOT FILE
+[04.14.2022 15:57:30 | INFO | CLIENT_2]: START Client_2!
+[04.14.2022 15:57:30 | INFO | CLIENT_2]: CLIENT 2 GOT FILE
+[04.14.2022 15:57:31 | INFO | CLIENT_2]: SENDED_2 RESULT
+[04.14.2022 15:57:31 | INFO | CLIENT_3]: START Client_3!
+[04.14.2022 15:57:31 | INFO | CLIENT_3]: CLIENT 3 GOT FILE
+[04.14.2022 15:57:38 | INFO | CLIENT_1]: START Client1!
+[04.14.2022 15:57:39 | INFO | CLIENT_1]: SENDED1 RESULT
+[04.14.2022 15:57:39 | INFO | CLIENT_1]: File Sended
+[04.14.2022 15:57:39 | INFO | CLIENT_1]: File Sended
+[04.14.2022 15:57:40 | INFO | CLIENT_1]: SENDED1 RESULT
+[04.14.2022 15:57:41 | INFO | CLIENT_2]: START Client_2!
+[04.14.2022 15:57:41 | INFO | CLIENT_2]: CLIENT 2 GOT FILE
+[04.14.2022 15:57:41 | INFO | CLIENT_2]: SENDED_2 RESULT
+[04.14.2022 15:57:41 | INFO | CLIENT_3]: START Client_3!
+[04.14.2022 15:57:41 | INFO | CLIENT_3]: CLIENT 3 GOT FILE
+[04.14.2022 15:57:43 | INFO | CLIENT_2]: START Client_2!
+[04.14.2022 15:57:43 | INFO | CLIENT_2]: CLIENT 2 GOT FILE
+[04.14.2022 15:57:43 | INFO | CLIENT_2]: SENDED_2 RESULT
+[04.14.2022 15:57:43 | INFO | CLIENT_3]: START Client_3!
+[04.14.2022 15:57:43 | INFO | CLIENT_3]: CLIENT 3 GOT FILE
+[04.14.2022 15:57:58 | INFO | CLIENT_1]: START Client1!
+[04.14.2022 15:57:59 | INFO | CLIENT_1]: SENDED1 RESULT
+[04.14.2022 15:57:59 | INFO | CLIENT_1]: File Sended
+[04.14.2022 15:58:00 | INFO | CLIENT_1]: File Sended
+[04.14.2022 15:58:00 | INFO | CLIENT_1]: SENDED1 RESULT
+[04.14.2022 15:58:00 | INFO | CLIENT_1]: SENDED1 RESULT
+[04.14.2022 15:58:01 | INFO | CLIENT_2]: START Client_2!
+[04.14.2022 15:58:01 | INFO | CLIENT_2]: CLIENT 2 GOT FILE
+[04.14.2022 15:58:02 | INFO | CLIENT_2]: SENDED_2 RESULT
+[04.14.2022 15:58:02 | INFO | CLIENT_3]: START Client_3!
+[04.14.2022 15:58:02 | INFO | CLIENT_3]: CLIENT 3 GOT FILE
+[04.14.2022 15:58:03 | INFO | CLIENT_2]: START Client_2!
+[04.14.2022 15:58:03 | INFO | CLIENT_2]: CLIENT 2 GOT FILE
+[04.14.2022 15:58:04 | INFO | CLIENT_2]: SENDED_2 RESULT
+[04.14.2022 15:58:04 | INFO | CLIENT_3]: START Client_3!
+[04.14.2022 15:58:04 | INFO | CLIENT_3]: CLIENT 3 GOT FILE
+[04.14.2022 15:58:21 | INFO | CLIENT_1]: START Client1!
+[04.14.2022 15:58:21 | INFO | CLIENT_1]: SENDED1 RESULT
+[04.14.2022 15:58:21 | INFO | CLIENT_1]: File Sended
+[04.14.2022 15:58:22 | INFO | CLIENT_1]: File Sended
+[04.14.2022 15:58:22 | INFO | CLIENT_1]: SENDED1 RESULT
+[04.14.2022 15:58:23 | INFO | CLIENT_1]: SENDED1 RESULT
+[04.14.2022 15:58:23 | INFO | CLIENT_1]: File Sended
+[04.14.2022 15:58:23 | INFO | CLIENT_2]: START Client_2!
+[04.14.2022 15:58:23 | INFO | CLIENT_2]: CLIENT 2 GOT FILE
+[04.14.2022 15:58:24 | INFO | CLIENT_2]: SENDED_2 RESULT
+[04.14.2022 15:58:24 | INFO | CLIENT_3]: START Client_3!
+[04.14.2022 15:58:24 | INFO | CLIENT_3]: CLIENT 3 GOT FILE
+[04.14.2022 15:58:25 | INFO | CLIENT_2]: START Client_2!
+[04.14.2022 15:58:25 | INFO | CLIENT_2]: CLIENT 2 GOT FILE
+[04.14.2022 15:58:26 | INFO | CLIENT_2]: SENDED_2 RESULT
+[04.14.2022 15:58:26 | INFO | CLIENT_3]: START Client_3!
+[04.14.2022 15:58:26 | INFO | CLIENT_3]: CLIENT 3 GOT FILE
+[04.14.2022 15:58:52 | INFO | CLIENT_1]: START Client1!
+[04.14.2022 15:58:52 | INFO | CLIENT_1]: File Sended
+[04.14.2022 15:58:53 | INFO | CLIENT_1]: File Sended
+[04.14.2022 15:58:53 | INFO | CLIENT_1]: SENDED1 RESULT
+[04.14.2022 15:58:54 | INFO | CLIENT_1]: SENDED1 RESULT
+[04.14.2022 15:58:54 | INFO | CLIENT_1]: File Sended
+[04.14.2022 15:58:54 | INFO | CLIENT_2]: START Client_2!
+[04.14.2022 15:58:54 | INFO | CLIENT_2]: CLIENT 2 GOT FILE
+[04.14.2022 15:58:55 | INFO | CLIENT_2]: SENDED_2 RESULT
+[04.14.2022 15:58:55 | INFO | CLIENT_3]: START Client_3!
+[04.14.2022 15:58:55 | INFO | CLIENT_3]: CLIENT 3 GOT FILE
+[04.14.2022 15:58:56 | INFO | CLIENT_2]: START Client_2!
+[04.14.2022 15:58:56 | INFO | CLIENT_2]: CLIENT 2 GOT FILE
+[04.14.2022 15:58:57 | INFO | CLIENT_3]: START Client_3!
+[04.14.2022 15:58:57 | INFO | CLIENT_3]: CLIENT 3 GOT FILE
+[04.14.2022 15:59:27 | INFO | CLIENT_1]: START Client1!
+[04.14.2022 15:59:27 | INFO | CLIENT_1]: SENDED1 RESULT
+[04.14.2022 15:59:27 | INFO | CLIENT_1]: File Sended
+[04.14.2022 15:59:28 | INFO | CLIENT_1]: File Sended
+[04.14.2022 15:59:28 | INFO | CLIENT_1]: SENDED1 RESULT
+[04.14.2022 15:59:29 | INFO | CLIENT_1]: SENDED1 RESULT
+[04.14.2022 15:59:30 | INFO | CLIENT_2]: START Client_2!
+[04.14.2022 15:59:30 | INFO | CLIENT_2]: CLIENT 2 GOT FILE
+[04.14.2022 15:59:30 | INFO | CLIENT_2]: SENDED_2 RESULT
+[04.14.2022 15:59:30 | INFO | CLIENT_3]: START Client_3!
+[04.14.2022 15:59:30 | INFO | CLIENT_3]: CLIENT 3 GOT FILE
+[04.14.2022 15:59:32 | INFO | CLIENT_2]: START Client_2!
+[04.14.2022 15:59:32 | INFO | CLIENT_2]: CLIENT 2 GOT FILE
+[04.14.2022 15:59:32 | INFO | CLIENT_2]: SENDED_2 RESULT
+[04.14.2022 15:59:32 | INFO | CLIENT_3]: START Client_3!
+[04.14.2022 15:59:32 | INFO | CLIENT_3]: CLIENT 3 GOT FILE
+[04.14.2022 15:59:49 | INFO | CLIENT_1]: START Client1!
+[04.14.2022 15:59:50 | INFO | CLIENT_1]: File Sended
+[04.14.2022 16:00:01 | INFO | CLIENT_1]: START Client1!
+[04.14.2022 16:00:01 | INFO | CLIENT_1]: File Sended
+[04.14.2022 16:00:02 | INFO | CLIENT_1]: File Sended
+[04.14.2022 16:00:02 | INFO | CLIENT_1]: File Sended
+[04.14.2022 16:00:03 | INFO | CLIENT_1]: SENDED1 RESULT
+[04.14.2022 16:01:47 | INFO | CLIENT_1]: START Client1!
+[04.14.2022 16:01:48 | INFO | CLIENT_1]: File Sended
+[04.14.2022 16:01:48 | INFO | CLIENT_1]: File Sended
+[04.14.2022 16:01:48 | INFO | CLIENT_1]: File Sended
+[04.14.2022 16:01:49 | INFO | CLIENT_1]: SENDED1 RESULT
+[04.14.2022 16:02:13 | INFO | CLIENT_1]: START Client1!
+[04.14.2022 16:02:13 | INFO | CLIENT_1]: File Sended
+[04.14.2022 16:02:13 | INFO | CLIENT_1]: File Sended
+[04.14.2022 16:02:14 | INFO | CLIENT_1]: File Sended
+[04.14.2022 16:02:14 | INFO | CLIENT_1]: SENDED1 RESULT
+[04.14.2022 16:02:29 | INFO | CLIENT_1]: START Client1!
+[04.14.2022 16:02:29 | INFO | CLIENT_1]: File Sended
+[04.14.2022 16:02:30 | INFO | CLIENT_1]: File Sended
+[04.14.2022 16:02:30 | INFO | CLIENT_1]: File Sended
+[04.14.2022 16:02:31 | INFO | CLIENT_1]: SENDED1 RESULT
+[04.14.2022 16:03:31 | INFO | CLIENT_1]: START Client1!
+[04.14.2022 16:03:31 | INFO | CLIENT_1]: File Sended
+[04.14.2022 16:03:32 | INFO | CLIENT_1]: File Sended
+[04.14.2022 16:03:32 | INFO | CLIENT_1]: File Sended
+[04.14.2022 16:05:48 | INFO | CLIENT_1]: START Client1!
+[04.14.2022 16:05:48 | INFO | CLIENT_1]: SENDED1 RESULT
+[04.14.2022 16:05:49 | INFO | CLIENT_1]: SENDED1 RESULT
+[04.14.2022 16:06:46 | INFO | CLIENT_1]: START Client1!
+[04.14.2022 16:07:06 | INFO | CLIENT_1]: START Client1!
+[04.14.2022 16:07:07 | INFO | CLIENT_1]: File Sended
+[04.14.2022 16:07:29 | INFO | CLIENT_1]: START Client1!
+[04.14.2022 16:07:57 | INFO | CLIENT_1]: START Client1!
+[04.14.2022 16:08:38 | INFO | CLIENT_1]: START Client1!
+[04.14.2022 16:08:48 | INFO | CLIENT_1]: START Client1!
+[04.14.2022 16:09:20 | INFO | CLIENT_1]: START Client1!
+[04.14.2022 16:09:46 | INFO | CLIENT_1]: START Client1!
+[04.14.2022 16:09:47 | INFO | CLIENT_1]: File Sended
+[04.14.2022 16:10:22 | INFO | CLIENT_1]: START Client1!
+[04.14.2022 16:10:22 | INFO | CLIENT_1]: File Sended
+[04.14.2022 16:12:02 | INFO | CLIENT_1]: START Client1!
+[04.14.2022 16:12:03 | INFO | CLIENT_1]: File Sended
+[04.14.2022 16:13:14 | INFO | CLIENT_1]: START Client1!
+[04.14.2022 16:13:14 | INFO | CLIENT_1]: File Sended
+[04.14.2022 16:14:42 | INFO | CLIENT_1]: START Client1!
+[04.14.2022 16:14:43 | INFO | CLIENT_1]: File Sended
+[04.14.2022 16:17:31 | INFO | CLIENT_1]: START Client1!
+[04.14.2022 16:17:31 | INFO | CLIENT_1]: File Sended
+[04.14.2022 16:18:24 | INFO | CLIENT_1]: START Client1!
+[04.14.2022 16:18:25 | INFO | CLIENT_1]: File Sended
+[04.14.2022 16:20:33 | INFO | CLIENT_1]: START Client1!
+[04.14.2022 16:20:33 | INFO | CLIENT_1]: SENDED1 RESULT
+[04.14.2022 16:20:34 | INFO | CLIENT_1]: File Sended
+[04.14.2022 16:20:36 | INFO | CLIENT_2]: START Client_2!
+[04.14.2022 16:20:36 | INFO | CLIENT_2]: CLIENT 2 GOT FILE
+[04.14.2022 16:20:36 | INFO | CLIENT_3]: START Client_3!
+[04.14.2022 16:20:36 | INFO | CLIENT_3]: CLIENT 3 GOT FILE
+[04.14.2022 16:21:59 | INFO | CLIENT_1]: START Client1!
+[04.14.2022 16:22:00 | INFO | CLIENT_1]: File Sended
+[04.14.2022 16:25:19 | INFO | CLIENT_1]: START Client1!
+[04.14.2022 16:25:19 | INFO | CLIENT_1]: SENDED1 RESULT
+[04.14.2022 16:25:19 | INFO | CLIENT_1]: SENDED1 RESULT
+[04.14.2022 16:25:19 | INFO | CLIENT_1]: SENDED1 RESULT
+[04.14.2022 16:25:19 | INFO | CLIENT_1]: SENDED1 RESULT
+[04.14.2022 16:25:19 | INFO | CLIENT_1]: SENDED1 RESULT
+[04.14.2022 16:25:19 | INFO | CLIENT_1]: SENDED1 RESULT
+[04.14.2022 16:25:19 | INFO | CLIENT_1]: SENDED1 RESULT
+[04.14.2022 16:25:19 | INFO | CLIENT_1]: SENDED1 RESULT
+[04.14.2022 16:25:19 | INFO | CLIENT_1]: SENDED1 RESULT
+[04.14.2022 16:25:19 | INFO | CLIENT_1]: SENDED1 RESULT
+[04.14.2022 16:25:52 | INFO | CLIENT_1]: START Client1!
+[04.14.2022 16:25:52 | INFO | CLIENT_1]: SENDED1 RESULT
+[04.14.2022 16:25:53 | INFO | CLIENT_1]: SENDED1 RESULT
+[04.14.2022 16:25:53 | INFO | CLIENT_1]: SENDED1 RESULT
+[04.14.2022 16:25:54 | INFO | CLIENT_1]: SENDED1 RESULT
+[04.14.2022 16:25:54 | INFO | CLIENT_1]: SENDED1 RESULT
+[04.14.2022 16:25:55 | INFO | CLIENT_1]: SENDED1 RESULT
+[04.14.2022 16:25:55 | INFO | CLIENT_1]: SENDED1 RESULT
+[04.14.2022 16:25:55 | INFO | CLIENT_1]: SENDED1 RESULT
+[04.14.2022 16:25:56 | INFO | CLIENT_1]: SENDED1 RESULT
+[04.14.2022 16:25:56 | INFO | CLIENT_1]: SENDED1 RESULT
+[04.14.2022 16:26:33 | INFO | CLIENT_1]: START Client1!
+[04.14.2022 16:26:33 | INFO | CLIENT_1]: SENDED1 RESULT
+[04.14.2022 16:26:33 | INFO | CLIENT_1]: SENDED1 RESULT
+[04.14.2022 16:27:03 | INFO | CLIENT_1]: START Client1!
+[04.14.2022 16:27:03 | INFO | CLIENT_1]: SENDED1 RESULT
+[04.14.2022 16:27:03 | INFO | CLIENT_1]: SENDED1 RESULT
+[04.14.2022 16:27:04 | INFO | CLIENT_1]: SENDED1 RESULT
+[04.14.2022 16:27:04 | INFO | CLIENT_1]: SENDED1 RESULT
+[04.14.2022 16:27:05 | INFO | CLIENT_1]: SENDED1 RESULT
+[04.14.2022 16:27:05 | INFO | CLIENT_1]: SENDED1 RESULT
+[04.14.2022 16:27:06 | INFO | CLIENT_1]: SENDED1 RESULT
+[04.14.2022 16:35:42 | INFO | CLIENT_1]: START Client1!
+[04.14.2022 16:35:42 | INFO | CLIENT_1]: SENDED1 RESULT
+[04.14.2022 16:35:43 | INFO | CLIENT_1]: SENDED1 RESULT
+[04.14.2022 16:37:39 | INFO | CLIENT_1]: START Client1!
+[04.14.2022 16:37:40 | INFO | CLIENT_1]: SENDED1 RESULT
+[04.14.2022 16:37:40 | INFO | CLIENT_1]: SENDED1 RESULT
+[04.14.2022 16:37:41 | INFO | CLIENT_1]: SENDED1 RESULT
+[04.14.2022 16:37:41 | INFO | CLIENT_1]: SENDED1 RESULT
+[04.14.2022 16:37:42 | INFO | CLIENT_1]: SENDED1 RESULT
+[04.14.2022 16:37:42 | INFO | CLIENT_1]: SENDED1 RESULT
+[04.14.2022 16:37:42 | INFO | CLIENT_1]: SENDED1 RESULT
+[04.14.2022 16:38:12 | INFO | CLIENT_1]: START Client1!
+[04.14.2022 16:38:12 | INFO | CLIENT_1]: SENDED1 RESULT
+[04.14.2022 16:38:13 | INFO | CLIENT_1]: SENDED1 RESULT
+[04.14.2022 16:38:13 | INFO | CLIENT_1]: SENDED1 RESULT
+[04.14.2022 16:38:13 | INFO | CLIENT_1]: SENDED1 RESULT
+[04.14.2022 16:38:14 | INFO | CLIENT_1]: SENDED1 RESULT
+[04.14.2022 16:38:14 | INFO | CLIENT_1]: SENDED1 RESULT
+[04.14.2022 16:38:15 | INFO | CLIENT_1]: SENDED1 RESULT
+[04.14.2022 16:38:15 | INFO | CLIENT_1]: SENDED1 RESULT
+[04.14.2022 16:38:16 | INFO | CLIENT_1]: SENDED1 RESULT
+[04.14.2022 16:38:16 | INFO | CLIENT_1]: SENDED1 RESULT
+[04.14.2022 16:41:53 | INFO | CLIENT_1]: START Client1!
+[04.14.2022 16:41:58 | INFO | CLIENT_1]: SENDED1 RESULT
+[04.14.2022 16:41:58 | INFO | CLIENT_1]: SENDED1 RESULT
+[04.14.2022 16:43:20 | INFO | CLIENT_1]: START Client1!
+[04.14.2022 16:43:21 | INFO | CLIENT_1]: SENDED1 RESULT
+[04.14.2022 16:43:21 | INFO | CLIENT_1]: SENDED1 RESULT
+[04.14.2022 16:43:22 | INFO | CLIENT_1]: SENDED1 RESULT
+[04.14.2022 16:43:22 | INFO | CLIENT_1]: SENDED1 RESULT
+[04.14.2022 16:43:22 | INFO | CLIENT_1]: SENDED1 RESULT
+[04.14.2022 16:43:23 | INFO | CLIENT_1]: SENDED1 RESULT
+[04.14.2022 16:43:23 | INFO | CLIENT_1]: SENDED1 RESULT
+[04.14.2022 16:43:24 | INFO | CLIENT_1]: SENDED1 RESULT
+[04.14.2022 16:43:24 | INFO | CLIENT_1]: SENDED1 RESULT
+[04.14.2022 16:43:25 | INFO | CLIENT_1]: SENDED1 RESULT
+[04.14.2022 16:43:25 | INFO | CLIENT_1]: File Sended
+[04.14.2022 16:43:25 | INFO | CLIENT_1]: File Sended
+[04.14.2022 16:43:27 | INFO | CLIENT_2]: START Client_2!
+[04.14.2022 16:43:27 | INFO | CLIENT_2]: CLIENT 2 GOT FILE
+[04.14.2022 16:43:28 | INFO | CLIENT_2]: SENDED_2 RESULT
+[04.14.2022 16:43:28 | INFO | CLIENT_3]: START Client_3!
+[04.14.2022 16:43:28 | INFO | CLIENT_3]: CLIENT 3 GOT FILE
+[04.14.2022 16:43:28 | INFO | CLIENT_3]: SENDED_3 RESULT
+[04.14.2022 16:43:29 | INFO | CLIENT_2]: START Client_2!
+[04.14.2022 16:43:29 | INFO | CLIENT_2]: CLIENT 2 GOT FILE
+[04.14.2022 16:43:30 | INFO | CLIENT_2]: SENDED_2 RESULT
+[04.14.2022 16:43:30 | INFO | CLIENT_3]: START Client_3!
+[04.14.2022 16:43:30 | INFO | CLIENT_3]: CLIENT 3 GOT FILE
+[04.14.2022 16:43:30 | INFO | CLIENT_3]: SENDED_3 RESULT
+[04.14.2022 17:01:50 | INFO | CLIENT_1]: START Client1!
+[04.14.2022 17:01:51 | INFO | CLIENT_1]: SENDED1 RESULT
+[04.14.2022 17:01:51 | INFO | CLIENT_1]: SENDED1 RESULT
+[04.14.2022 17:01:52 | INFO | CLIENT_1]: SENDED1 RESULT
+[04.14.2022 17:01:52 | INFO | CLIENT_1]: SENDED1 RESULT
+[04.14.2022 17:03:23 | INFO | CLIENT_1]: START Client1!
+[04.14.2022 17:03:24 | INFO | CLIENT_1]: SENDED1 RESULT
+[04.14.2022 17:03:24 | INFO | CLIENT_1]: SENDED1 RESULT
+[04.14.2022 17:03:25 | INFO | CLIENT_1]: SENDED1 RESULT
+[04.14.2022 17:03:25 | INFO | CLIENT_1]: File Sended
+[04.14.2022 17:03:27 | INFO | CLIENT_2]: START Client_2!
+[04.14.2022 17:03:27 | INFO | CLIENT_2]: CLIENT 2 GOT FILE
+[04.14.2022 17:03:28 | INFO | CLIENT_2]: SENDED_2 RESULT
+[04.14.2022 17:03:28 | INFO | CLIENT_3]: START Client_3!
+[04.14.2022 17:03:28 | INFO | CLIENT_3]: CLIENT 3 GOT FILE
+[04.14.2022 17:03:28 | INFO | CLIENT_3]: SENDED_3 RESULT
+[04.14.2022 17:03:54 | INFO | CLIENT_1]: START Client1!
+[04.14.2022 17:03:55 | INFO | CLIENT_1]: SENDED1 RESULT
+[04.14.2022 17:03:55 | INFO | CLIENT_1]: SENDED1 RESULT
+[04.14.2022 17:03:56 | INFO | CLIENT_1]: SENDED1 RESULT
+[04.14.2022 17:03:56 | INFO | CLIENT_1]: File Sended
+[04.14.2022 17:03:58 | INFO | CLIENT_2]: START Client_2!
+[04.14.2022 17:03:58 | INFO | CLIENT_2]: CLIENT 2 GOT FILE
+[04.14.2022 17:03:59 | INFO | CLIENT_2]: SENDED_2 RESULT
+[04.14.2022 17:03:59 | INFO | CLIENT_3]: START Client_3!
+[04.14.2022 17:03:59 | INFO | CLIENT_3]: CLIENT 3 GOT FILE
+[04.14.2022 17:04:23 | INFO | CLIENT_1]: START Client1!
+[04.14.2022 17:04:23 | INFO | CLIENT_1]: SENDED1 RESULT
+[04.14.2022 17:04:23 | INFO | CLIENT_1]: SENDED1 RESULT
+[04.14.2022 17:04:24 | INFO | CLIENT_1]: File Sended
+[04.14.2022 17:04:26 | INFO | CLIENT_2]: START Client_2!
+[04.14.2022 17:04:26 | INFO | CLIENT_2]: CLIENT 2 GOT FILE
+[04.14.2022 17:04:26 | INFO | CLIENT_2]: SENDED_2 RESULT
+[04.14.2022 17:04:26 | INFO | CLIENT_3]: START Client_3!
+[04.14.2022 17:04:26 | INFO | CLIENT_3]: CLIENT 3 GOT FILE
+[04.14.2022 17:05:33 | INFO | CLIENT_1]: START Client1!
+[04.14.2022 17:05:33 | INFO | CLIENT_1]: SENDED1 RESULT
+[04.14.2022 17:05:34 | INFO | CLIENT_1]: SENDED1 RESULT
+[04.14.2022 17:05:34 | INFO | CLIENT_1]: File Sended
+[04.14.2022 17:05:36 | INFO | CLIENT_2]: START Client_2!
+[04.14.2022 17:05:36 | INFO | CLIENT_2]: CLIENT 2 GOT FILE
+[04.14.2022 17:05:37 | INFO | CLIENT_2]: SENDED_2 RESULT
+[04.14.2022 17:05:37 | INFO | CLIENT_3]: START Client_3!
+[04.14.2022 17:05:37 | INFO | CLIENT_3]: CLIENT 3 GOT FILE
+[04.18.2022 22:40:45 | INFO | CLIENT_1]: START Client1!
+[04.18.2022 22:41:31 | INFO | CLIENT_1]: START Client1!
+[04.18.2022 22:41:36 | INFO | CLIENT_1]: SENDED1 RESULT
+[04.18.2022 22:41:40 | INFO | CLIENT_1]: SENDED1 RESULT
+[04.18.2022 22:41:45 | INFO | CLIENT_1]: SENDED1 RESULT
+[04.18.2022 22:43:20 | INFO | CLIENT_1]: START Client1!
+[04.18.2022 22:45:24 | INFO | CLIENT_1]: START Client1!
+[04.18.2022 22:46:26 | INFO | CLIENT_1]: START Client1!
+[04.18.2022 22:46:31 | INFO | CLIENT_1]: File Sended
+[04.18.2022 22:46:35 | INFO | CLIENT_1]: File Sended
+[04.18.2022 22:46:40 | INFO | CLIENT_1]: File Sended
+[04.18.2022 22:46:44 | INFO | CLIENT_1]: SENDED1 RESULT
+[04.18.2022 22:46:48 | INFO | CLIENT_1]: SENDED1 RESULT
+[04.18.2022 22:46:49 | INFO | CLIENT_2]: START Client_2!
+[04.18.2022 22:46:49 | INFO | CLIENT_2]: START Client_2!
+[04.18.2022 22:50:53 | INFO | CLIENT_1]: START Client1!
+[04.18.2022 22:50:57 | INFO | CLIENT_1]: 
+[04.18.2022 22:51:02 | INFO | CLIENT_1]: 
+[04.18.2022 22:51:06 | INFO | CLIENT_1]: 
+[04.18.2022 22:51:11 | INFO | CLIENT_1]: умный дом обогреватель сделай горячее
+[04.18.2022 22:51:15 | INFO | CLIENT_1]: обогреватель сделай холоднее
+[04.18.2022 22:51:19 | INFO | CLIENT_1]: 
+[04.18.2022 22:51:24 | INFO | CLIENT_1]: 
+[04.18.2022 22:51:28 | INFO | CLIENT_1]: 
+[04.18.2022 22:51:32 | INFO | CLIENT_1]: 
+[04.18.2022 22:51:37 | INFO | CLIENT_1]: обогреватель сделай горячее
+[04.18.2022 22:52:12 | INFO | CLIENT_1]: START Client1!
+[04.18.2022 22:52:16 | INFO | CLIENT_1]: CompletedProcess(args='cd /home/pi/pocketsphinx-5prealpha/src/programs && pocketsphinx_continuous -samprate 16000 -hmm /home/pi/pocketsphinx-5prealpha/model/ru-model/zero_ru.cd_cont_4000/ -jsgf /home/pi/nikolayDC/Gramma/cl1/cl1_gram.gram -dict /home/pi/nikolayDC/Gramma/cl1/raw_cl1.dict -infile /home/pi/nikolayDC/cluster-client-server/recs/rec9.wav -logfn /dev/null', returncode=0, stdout='')
+[04.18.2022 22:52:21 | INFO | CLIENT_1]: CompletedProcess(args='cd /home/pi/pocketsphinx-5prealpha/src/programs && pocketsphinx_continuous -samprate 16000 -hmm /home/pi/pocketsphinx-5prealpha/model/ru-model/zero_ru.cd_cont_4000/ -jsgf /home/pi/nikolayDC/Gramma/cl1/cl1_gram.gram -dict /home/pi/nikolayDC/Gramma/cl1/raw_cl1.dict -infile /home/pi/nikolayDC/cluster-client-server/recs/rec10.wav -logfn /dev/null', returncode=0, stdout='обогреватель сделай горячее\n')
+[04.18.2022 22:53:18 | INFO | CLIENT_1]: START Client1!
+[04.18.2022 22:53:22 | INFO | CLIENT_1]: CompletedProcess(args='cd /home/pi/pocketsphinx-5prealpha/src/programs && pocketsphinx_continuous -samprate 16000 -hmm /home/pi/pocketsphinx-5prealpha/model/ru-model/zero_ru.cd_cont_4000/ -jsgf /home/pi/nikolayDC/Gramma/cl1/cl1_gram.gram -dict /home/pi/nikolayDC/Gramma/cl1/raw_cl1.dict -infile /home/pi/nikolayDC/cluster-client-server/recs/rec10.wav', returncode=0, stdout='INFO: pocketsphinx.c(152): Parsed model-specific feature parameters from /home/pi/pocketsphinx-5prealpha/model/ru-model/zero_ru.cd_cont_4000//feat.params\nCurrent configuration:\n[NAME]\t\t\t[DEFLT]\t\t[VALUE]\n-agc\t\t\tnone\t\tnone\n-agcthresh\t\t2.0\t\t2.000000e+00\n-allphone\t\t\t\t\n-allphone_ci\t\tno\t\tno\n-alpha\t\t\t0.97\t\t9.700000e-01\n-ascale\t\t\t20.0\t\t2.000000e+01\n-aw\t\t\t1\t\t1\n-backtrace\t\tno\t\tno\n-beam\t\t\t1e-48\t\t1.000000e-48\n-bestpath\t\tyes\t\tyes\n-bestpathlw\t\t9.5\t\t9.500000e+00\n-ceplen\t\t\t13\t\t13\n-cmn\t\t\tlive\t\tcurrent\n-cmninit\t\t40,3,-1\t\t11.64,0.15,-0.04,0.17,-0.40,-0.03,-0.50,-0.13,-0.33,-0.11,-0.19,-0.10,-0.24\n-compallsen\t\tno\t\tno\n-debug\t\t\t\t\t0\n-dict\t\t\t\t\t/home/pi/nikolayDC/Gramma/cl1/raw_cl1.dict\n-dictcase\t\tno\t\tno\n-dither\t\t\tno\t\tyes\n-doublebw\t\tno\t\tno\n-ds\t\t\t1\t\t1\n-fdict\t\t\t\t\t\n-feat\t\t\t1s_c_d_dd\t1s_c_d_dd\n-featparams\t\t\t\t\n-fillprob\t\t1e-8\t\t1.000000e-08\n-frate\t\t\t100\t\t100\n-fsg\t\t\t\t\t\n-fsgusealtpron\t\tyes\t\tyes\n-fsgusefiller\t\tyes\t\tyes\n-fwdflat\t\tyes\t\tyes\n-fwdflatbeam\t\t1e-64\t\t1.000000e-64\n-fwdflatefwid\t\t4\t\t4\n-fwdflatlw\t\t8.5\t\t8.500000e+00\n-fwdflatsfwin\t\t25\t\t25\n-fwdflatwbeam\t\t7e-29\t\t7.000000e-29\n-fwdtree\t\tyes\t\tyes\n-hmm\t\t\t\t\t/home/pi/pocketsphinx-5prealpha/model/ru-model/zero_ru.cd_cont_4000/\n-input_endian\t\tlittle\t\tlittle\n-jsgf\t\t\t\t\t/home/pi/nikolayDC/Gramma/cl1/cl1_gram.gram\n-keyphrase\t\t\t\t\n-kws\t\t\t\t\t\n-kws_delay\t\t10\t\t10\n-kws_plp\t\t1e-1\t\t1.000000e-01\n-kws_threshold\t\t1\t\t1.000000e+00\n-latsize\t\t5000\t\t5000\n-lda\t\t\t\t\t\n-ldadim\t\t\t0\t\t0\n-lifter\t\t\t0\t\t0\n-lm\t\t\t\t\t\n-lmctl\t\t\t\t\t\n-lmname\t\t\t\t\t\n-logbase\t\t1.0001\t\t1.000100e+00\n-logfn\t\t\t\t\t\n-logspec\t\tno\t\tno\n-lowerf\t\t\t133.33334\t1.300000e+02\n-lpbeam\t\t\t1e-40\t\t1.000000e-40\n-lponlybeam\t\t7e-29\t\t7.000000e-29\n-lw\t\t\t6.5\t\t6.500000e+00\n-maxhmmpf\t\t30000\t\t30000\n-maxwpf\t\t\t-1\t\t-1\n-mdef\t\t\t\t\t\n-mean\t\t\t\t\t\n-mfclogdir\t\t\t\t\n-min_endfr\t\t0\t\t0\n-mixw\t\t\t\t\t\n-mixwfloor\t\t0.0000001\t1.000000e-07\n-mllr\t\t\t\t\t\n-mmap\t\t\tyes\t\tyes\n-ncep\t\t\t13\t\t13\n-nfft\t\t\t512\t\t512\n-nfilt\t\t\t40\t\t31\n-nwpen\t\t\t1.0\t\t1.000000e+00\n-pbeam\t\t\t1e-48\t\t1.000000e-48\n-pip\t\t\t1.0\t\t1.000000e+00\n-pl_beam\t\t1e-10\t\t1.000000e-10\n-pl_pbeam\t\t1e-10\t\t1.000000e-10\n-pl_pip\t\t\t1.0\t\t1.000000e+00\n-pl_weight\t\t3.0\t\t3.000000e+00\n-pl_window\t\t5\t\t5\n-rawlogdir\t\t\t\t\n-remove_dc\t\tno\t\tno\n-remove_noise\t\tyes\t\tyes\n-remove_silence\t\tyes\t\tyes\n-round_filters\t\tyes\t\tyes\n-samprate\t\t16000\t\t1.600000e+04\n-seed\t\t\t-1\t\t-1\n-sendump\t\t\t\t\n-senlogdir\t\t\t\t\n-senmgau\t\t\t\t\n-silprob\t\t0.005\t\t5.000000e-03\n-smoothspec\t\tno\t\tno\n-svspec\t\t\t\t\t\n-tmat\t\t\t\t\t\n-tmatfloor\t\t0.0001\t\t1.000000e-04\n-topn\t\t\t4\t\t4\n-topn_beam\t\t0\t\t0\n-toprule\t\t\t\t\n-transform\t\tlegacy\t\tlegacy\n-unit_area\t\tyes\t\tyes\n-upperf\t\t\t6855.4976\t3.700000e+03\n-uw\t\t\t1.0\t\t1.000000e+00\n-vad_postspeech\t\t50\t\t50\n-vad_prespeech\t\t20\t\t20\n-vad_startspeech\t10\t\t10\n-vad_threshold\t\t2.0\t\t2.000000e+00\n-var\t\t\t\t\t\n-varfloor\t\t0.0001\t\t1.000000e-04\n-varnorm\t\tno\t\tno\n-verbose\t\tno\t\tno\n-warp_params\t\t\t\t\n-warp_type\t\tinverse_linear\tinverse_linear\n-wbeam\t\t\t7e-29\t\t7.000000e-29\n-wip\t\t\t0.65\t\t6.500000e-01\n-wlen\t\t\t0.025625\t2.562500e-02\n\nINFO: fe_interface.c(324): Using -1 as the seed.\nINFO: feat.c(715): Initializing feature stream to type: \'1s_c_d_dd\', ceplen=13, CMN=\'batch\', VARNORM=\'no\', AGC=\'none\'\nINFO: acmod.c(152): Reading linear feature transformation from /home/pi/pocketsphinx-5prealpha/model/ru-model/zero_ru.cd_cont_4000//feature_transform\nINFO: mdef.c(518): Reading model definition: /home/pi/pocketsphinx-5prealpha/model/ru-model/zero_ru.cd_cont_4000//mdef\nINFO: bin_mdef.c(181): Allocating 145321 * 8 bytes (1135 KiB) for CD tree\nINFO: tmat.c(149): Reading HMM transition probability matrices: /home/pi/pocketsphinx-5prealpha/model/ru-model/zero_ru.cd_cont_4000//transition_matrices\nINFO: acmod.c(113): Attempting to use PTM computation module\nINFO: ms_gauden.c(127): Reading mixture gaussian parameter: /home/pi/pocketsphinx-5prealpha/model/ru-model/zero_ru.cd_cont_4000//means\nINFO: ms_gauden.c(242): 4159 codebook, 1 feature, size: \nINFO: ms_gauden.c(244):  63x29\nINFO: ms_gauden.c(127): Reading mixture gaussian parameter: /home/pi/pocketsphinx-5prealpha/model/ru-model/zero_ru.cd_cont_4000//variances\nINFO: ms_gauden.c(242): 4159 codebook, 1 feature, size: \nINFO: ms_gauden.c(244):  63x29\nINFO: ms_gauden.c(304): 182668 variance values floored\nINFO: ptm_mgau.c(804): Number of codebooks exceeds 256: 4159\nINFO: acmod.c(115): Attempting to use semi-continuous computation module\nINFO: ms_gauden.c(127): Reading mixture gaussian parameter: /home/pi/pocketsphinx-5prealpha/model/ru-model/zero_ru.cd_cont_4000//means\nINFO: ms_gauden.c(242): 4159 codebook, 1 feature, size: \nINFO: ms_gauden.c(244):  63x29\nINFO: ms_gauden.c(127): Reading mixture gaussian parameter: /home/pi/pocketsphinx-5prealpha/model/ru-model/zero_ru.cd_cont_4000//variances\nINFO: ms_gauden.c(242): 4159 codebook, 1 feature, size: \nINFO: ms_gauden.c(244):  63x29\nINFO: ms_gauden.c(304): 182668 variance values floored\nINFO: acmod.c(117): Falling back to general multi-stream GMM computation\nINFO: ms_gauden.c(127): Reading mixture gaussian parameter: /home/pi/pocketsphinx-5prealpha/model/ru-model/zero_ru.cd_cont_4000//means\nINFO: ms_gauden.c(242): 4159 codebook, 1 feature, size: \nINFO: ms_gauden.c(244):  63x29\nINFO: ms_gauden.c(127): Reading mixture gaussian parameter: /home/pi/pocketsphinx-5prealpha/model/ru-model/zero_ru.cd_cont_4000//variances\nINFO: ms_gauden.c(242): 4159 codebook, 1 feature, size: \nINFO: ms_gauden.c(244):  63x29\nINFO: ms_gauden.c(304): 182668 variance values floored\nINFO: ms_senone.c(149): Reading senone mixture weights: /home/pi/pocketsphinx-5prealpha/model/ru-model/zero_ru.cd_cont_4000//mixture_weights\nINFO: ms_senone.c(200): Truncating senone logs3(pdf) values by 10 bits\nINFO: ms_senone.c(207): Not transposing mixture weights in memory\nINFO: ms_senone.c(268): Read mixture weights for 4159 senones: 1 features x 63 codewords\nINFO: ms_senone.c(320): Mapping senones to individual codebooks\nINFO: ms_mgau.c(144): The value of topn: 4\nINFO: phone_loop_search.c(114): State beam -225 Phone exit beam -225 Insertion penalty 0\nINFO: dict.c(320): Allocating 4106 * 20 bytes (80 KiB) for word entries\nINFO: dict.c(333): Reading main dictionary: /home/pi/nikolayDC/Gramma/cl1/raw_cl1.dict\nINFO: dict.c(213): Dictionary size 7, allocated 0 KiB for strings, 0 KiB for phones\nINFO: dict.c(336): 7 words read\nINFO: dict.c(358): Reading filler dictionary: /home/pi/pocketsphinx-5prealpha/model/ru-model/zero_ru.cd_cont_4000//noisedict\nINFO: dict.c(213): Dictionary size 10, allocated 0 KiB for strings, 0 KiB for phones\nINFO: dict.c(361): 3 words read\nINFO: dict2pid.c(396): Building PID tables for dictionary\nINFO: dict2pid.c(406): Allocating 53^3 * 2 bytes (290 KiB) for word-initial triphones\nINFO: dict2pid.c(132): Allocated 33920 bytes (33 KiB) for word-final triphones\nINFO: dict2pid.c(196): Allocated 33920 bytes (33 KiB) for single-phone word triphones\nINFO: jsgf.c(706): Defined rule: PUBLIC <basicCmd.basicCmd>\nINFO: jsgf.c(706): Defined rule: <basicCmd.g00001>\nINFO: jsgf.c(706): Defined rule: <basicCmd.g00002>\nINFO: jsgf.c(706): Defined rule: <basicCmd.g00003>\nINFO: jsgf.c(706): Defined rule: <basicCmd.cmdHeater>\nINFO: jsgf.c(706): Defined rule: <basicCmd.g00005>\nINFO: jsgf.c(706): Defined rule: <basicCmd.start>\nINFO: fsg_model.c(208): Computing transitive closure for null transitions\nINFO: fsg_model.c(270): 0 null transitions added\nINFO: fsg_search.c(227): FSG(beam: -1080, pbeam: -1080, wbeam: -634; wip: -26, pip: 0)\nINFO: fsg_model.c(423): Adding silence transitions for <sil> to FSG\nINFO: fsg_model.c(443): Added 6 silence word transitions\nINFO: fsg_search.c(173): Added 1 alternate word transitions\nINFO: fsg_lextree.c(110): Allocated 648 bytes (0 KiB) for left and right context phones\nINFO: fsg_lextree.c(256): 62 HMM nodes in lextree (20 leaves)\nINFO: fsg_lextree.c(259): Allocated 7440 bytes (7 KiB) for all lextree nodes\nINFO: fsg_lextree.c(262): Allocated 2400 bytes (2 KiB) for lextree leafnodes\nINFO: continuous.c(307): pocketsphinx_continuous COMPILED ON: Jan 23 2022, AT: 20:06:53\n\nINFO: cmn_live.c(120): Update from < 11.64  0.15 -0.04  0.17 -0.40 -0.03 -0.50 -0.13 -0.33 -0.11 -0.19 -0.10 -0.24 >\nINFO: cmn_live.c(138): Update to   < 10.01  0.44  0.02 -0.14 -0.39 -0.21 -0.15 -0.30 -0.21 -0.24 -0.12 -0.17 -0.20 >\nINFO: fsg_search.c(859): 240 frames, 2029 HMMs (8/fr), 7756 senones (32/fr), 546 history entries (2/fr)\n\nINFO: fsg_search.c(869): fsg 0.05 CPU 0.022 xRT\nINFO: fsg_search.c(871): fsg 0.05 wall 0.022 xRT\nERROR: "fsg_search.c", line 940: Final result does not match the grammar in frame 240\nINFO: cmn_live.c(120): Update from < 10.01  0.44  0.02 -0.14 -0.39 -0.21 -0.15 -0.30 -0.21 -0.24 -0.12 -0.17 -0.20 >\nINFO: cmn_live.c(138): Update to   < 10.57  0.53 -0.08 -0.13 -0.42 -0.18 -0.19 -0.31 -0.16 -0.27 -0.12 -0.18 -0.21 >\nINFO: fsg_search.c(859): 318 frames, 5538 HMMs (17/fr), 15752 senones (49/fr), 1244 history entries (3/fr)\n\nINFO: fsg_search.c(869): fsg 0.10 CPU 0.030 xRT\nINFO: fsg_search.c(871): fsg 0.10 wall 0.030 xRT\nобогреватель сделай горячее\nINFO: cmn_live.c(120): Update from < 10.57  0.53 -0.08 -0.13 -0.42 -0.18 -0.19 -0.31 -0.16 -0.27 -0.12 -0.18 -0.21 >\nINFO: cmn_live.c(138): Update to   < 10.57  0.53 -0.08 -0.13 -0.42 -0.18 -0.19 -0.31 -0.16 -0.27 -0.12 -0.18 -0.21 >\nINFO: fsg_search.c(859): 0 frames, 0 HMMs (0/fr), 0 senones (0/fr), 2 history entries (0/fr)\n\nINFO: fsg_search.c(265): TOTAL fsg 0.15 CPU 0.027 xRT\nINFO: fsg_search.c(268): TOTAL fsg 0.15 wall 0.027 xRT\n')
+[04.18.2022 22:54:12 | INFO | CLIENT_1]: START Client1!
+[04.18.2022 22:54:16 | INFO | CLIENT_1]: INFO: pocketsphinx.c(152): Parsed model-specific feature parameters from /home/pi/pocketsphinx-5prealpha/model/ru-model/zero_ru.cd_cont_4000//feat.params
+Current configuration:
+[NAME]			[DEFLT]		[VALUE]
+-agc			none		none
+-agcthresh		2.0		2.000000e+00
+-allphone				
+-allphone_ci		no		no
+-alpha			0.97		9.700000e-01
+-ascale			20.0		2.000000e+01
+-aw			1		1
+-backtrace		no		no
+-beam			1e-48		1.000000e-48
+-bestpath		yes		yes
+-bestpathlw		9.5		9.500000e+00
+-ceplen			13		13
+-cmn			live		current
+-cmninit		40,3,-1		11.64,0.15,-0.04,0.17,-0.40,-0.03,-0.50,-0.13,-0.33,-0.11,-0.19,-0.10,-0.24
+-compallsen		no		no
+-debug					0
+-dict					/home/pi/nikolayDC/Gramma/cl1/raw_cl1.dict
+-dictcase		no		no
+-dither			no		yes
+-doublebw		no		no
+-ds			1		1
+-fdict					
+-feat			1s_c_d_dd	1s_c_d_dd
+-featparams				
+-fillprob		1e-8		1.000000e-08
+-frate			100		100
+-fsg					
+-fsgusealtpron		yes		yes
+-fsgusefiller		yes		yes
+-fwdflat		yes		yes
+-fwdflatbeam		1e-64		1.000000e-64
+-fwdflatefwid		4		4
+-fwdflatlw		8.5		8.500000e+00
+-fwdflatsfwin		25		25
+-fwdflatwbeam		7e-29		7.000000e-29
+-fwdtree		yes		yes
+-hmm					/home/pi/pocketsphinx-5prealpha/model/ru-model/zero_ru.cd_cont_4000/
+-input_endian		little		little
+-jsgf					/home/pi/nikolayDC/Gramma/cl1/cl1_gram.gram
+-keyphrase				
+-kws					
+-kws_delay		10		10
+-kws_plp		1e-1		1.000000e-01
+-kws_threshold		1		1.000000e+00
+-latsize		5000		5000
+-lda					
+-ldadim			0		0
+-lifter			0		0
+-lm					
+-lmctl					
+-lmname					
+-logbase		1.0001		1.000100e+00
+-logfn					
+-logspec		no		no
+-lowerf			133.33334	1.300000e+02
+-lpbeam			1e-40		1.000000e-40
+-lponlybeam		7e-29		7.000000e-29
+-lw			6.5		6.500000e+00
+-maxhmmpf		30000		30000
+-maxwpf			-1		-1
+-mdef					
+-mean					
+-mfclogdir				
+-min_endfr		0		0
+-mixw					
+-mixwfloor		0.0000001	1.000000e-07
+-mllr					
+-mmap			yes		yes
+-ncep			13		13
+-nfft			512		512
+-nfilt			40		31
+-nwpen			1.0		1.000000e+00
+-pbeam			1e-48		1.000000e-48
+-pip			1.0		1.000000e+00
+-pl_beam		1e-10		1.000000e-10
+-pl_pbeam		1e-10		1.000000e-10
+-pl_pip			1.0		1.000000e+00
+-pl_weight		3.0		3.000000e+00
+-pl_window		5		5
+-rawlogdir				
+-remove_dc		no		no
+-remove_noise		yes		yes
+-remove_silence		yes		yes
+-round_filters		yes		yes
+-samprate		16000		1.600000e+04
+-seed			-1		-1
+-sendump				
+-senlogdir				
+-senmgau				
+-silprob		0.005		5.000000e-03
+-smoothspec		no		no
+-svspec					
+-tmat					
+-tmatfloor		0.0001		1.000000e-04
+-topn			4		4
+-topn_beam		0		0
+-toprule				
+-transform		legacy		legacy
+-unit_area		yes		yes
+-upperf			6855.4976	3.700000e+03
+-uw			1.0		1.000000e+00
+-vad_postspeech		50		50
+-vad_prespeech		20		20
+-vad_startspeech	10		10
+-vad_threshold		2.0		2.000000e+00
+-var					
+-varfloor		0.0001		1.000000e-04
+-varnorm		no		no
+-verbose		no		no
+-warp_params				
+-warp_type		inverse_linear	inverse_linear
+-wbeam			7e-29		7.000000e-29
+-wip			0.65		6.500000e-01
+-wlen			0.025625	2.562500e-02
+
+INFO: fe_interface.c(324): Using -1 as the seed.
+INFO: feat.c(715): Initializing feature stream to type: '1s_c_d_dd', ceplen=13, CMN='batch', VARNORM='no', AGC='none'
+INFO: acmod.c(152): Reading linear feature transformation from /home/pi/pocketsphinx-5prealpha/model/ru-model/zero_ru.cd_cont_4000//feature_transform
+INFO: mdef.c(518): Reading model definition: /home/pi/pocketsphinx-5prealpha/model/ru-model/zero_ru.cd_cont_4000//mdef
+INFO: bin_mdef.c(181): Allocating 145321 * 8 bytes (1135 KiB) for CD tree
+INFO: tmat.c(149): Reading HMM transition probability matrices: /home/pi/pocketsphinx-5prealpha/model/ru-model/zero_ru.cd_cont_4000//transition_matrices
+INFO: acmod.c(113): Attempting to use PTM computation module
+INFO: ms_gauden.c(127): Reading mixture gaussian parameter: /home/pi/pocketsphinx-5prealpha/model/ru-model/zero_ru.cd_cont_4000//means
+INFO: ms_gauden.c(242): 4159 codebook, 1 feature, size: 
+INFO: ms_gauden.c(244):  63x29
+INFO: ms_gauden.c(127): Reading mixture gaussian parameter: /home/pi/pocketsphinx-5prealpha/model/ru-model/zero_ru.cd_cont_4000//variances
+INFO: ms_gauden.c(242): 4159 codebook, 1 feature, size: 
+INFO: ms_gauden.c(244):  63x29
+INFO: ms_gauden.c(304): 182668 variance values floored
+INFO: ptm_mgau.c(804): Number of codebooks exceeds 256: 4159
+INFO: acmod.c(115): Attempting to use semi-continuous computation module
+INFO: ms_gauden.c(127): Reading mixture gaussian parameter: /home/pi/pocketsphinx-5prealpha/model/ru-model/zero_ru.cd_cont_4000//means
+INFO: ms_gauden.c(242): 4159 codebook, 1 feature, size: 
+INFO: ms_gauden.c(244):  63x29
+INFO: ms_gauden.c(127): Reading mixture gaussian parameter: /home/pi/pocketsphinx-5prealpha/model/ru-model/zero_ru.cd_cont_4000//variances
+INFO: ms_gauden.c(242): 4159 codebook, 1 feature, size: 
+INFO: ms_gauden.c(244):  63x29
+INFO: ms_gauden.c(304): 182668 variance values floored
+INFO: acmod.c(117): Falling back to general multi-stream GMM computation
+INFO: ms_gauden.c(127): Reading mixture gaussian parameter: /home/pi/pocketsphinx-5prealpha/model/ru-model/zero_ru.cd_cont_4000//means
+INFO: ms_gauden.c(242): 4159 codebook, 1 feature, size: 
+INFO: ms_gauden.c(244):  63x29
+INFO: ms_gauden.c(127): Reading mixture gaussian parameter: /home/pi/pocketsphinx-5prealpha/model/ru-model/zero_ru.cd_cont_4000//variances
+INFO: ms_gauden.c(242): 4159 codebook, 1 feature, size: 
+INFO: ms_gauden.c(244):  63x29
+INFO: ms_gauden.c(304): 182668 variance values floored
+INFO: ms_senone.c(149): Reading senone mixture weights: /home/pi/pocketsphinx-5prealpha/model/ru-model/zero_ru.cd_cont_4000//mixture_weights
+INFO: ms_senone.c(200): Truncating senone logs3(pdf) values by 10 bits
+INFO: ms_senone.c(207): Not transposing mixture weights in memory
+INFO: ms_senone.c(268): Read mixture weights for 4159 senones: 1 features x 63 codewords
+INFO: ms_senone.c(320): Mapping senones to individual codebooks
+INFO: ms_mgau.c(144): The value of topn: 4
+INFO: phone_loop_search.c(114): State beam -225 Phone exit beam -225 Insertion penalty 0
+INFO: dict.c(320): Allocating 4106 * 20 bytes (80 KiB) for word entries
+INFO: dict.c(333): Reading main dictionary: /home/pi/nikolayDC/Gramma/cl1/raw_cl1.dict
+INFO: dict.c(213): Dictionary size 7, allocated 0 KiB for strings, 0 KiB for phones
+INFO: dict.c(336): 7 words read
+INFO: dict.c(358): Reading filler dictionary: /home/pi/pocketsphinx-5prealpha/model/ru-model/zero_ru.cd_cont_4000//noisedict
+INFO: dict.c(213): Dictionary size 10, allocated 0 KiB for strings, 0 KiB for phones
+INFO: dict.c(361): 3 words read
+INFO: dict2pid.c(396): Building PID tables for dictionary
+INFO: dict2pid.c(406): Allocating 53^3 * 2 bytes (290 KiB) for word-initial triphones
+INFO: dict2pid.c(132): Allocated 33920 bytes (33 KiB) for word-final triphones
+INFO: dict2pid.c(196): Allocated 33920 bytes (33 KiB) for single-phone word triphones
+INFO: jsgf.c(706): Defined rule: PUBLIC <basicCmd.basicCmd>
+INFO: jsgf.c(706): Defined rule: <basicCmd.g00001>
+INFO: jsgf.c(706): Defined rule: <basicCmd.g00002>
+INFO: jsgf.c(706): Defined rule: <basicCmd.g00003>
+INFO: jsgf.c(706): Defined rule: <basicCmd.cmdHeater>
+INFO: jsgf.c(706): Defined rule: <basicCmd.g00005>
+INFO: jsgf.c(706): Defined rule: <basicCmd.start>
+INFO: fsg_model.c(208): Computing transitive closure for null transitions
+INFO: fsg_model.c(270): 0 null transitions added
+INFO: fsg_search.c(227): FSG(beam: -1080, pbeam: -1080, wbeam: -634; wip: -26, pip: 0)
+INFO: fsg_model.c(423): Adding silence transitions for <sil> to FSG
+INFO: fsg_model.c(443): Added 6 silence word transitions
+INFO: fsg_search.c(173): Added 1 alternate word transitions
+INFO: fsg_lextree.c(110): Allocated 648 bytes (0 KiB) for left and right context phones
+INFO: fsg_lextree.c(256): 62 HMM nodes in lextree (20 leaves)
+INFO: fsg_lextree.c(259): Allocated 7440 bytes (7 KiB) for all lextree nodes
+INFO: fsg_lextree.c(262): Allocated 2400 bytes (2 KiB) for lextree leafnodes
+INFO: continuous.c(307): pocketsphinx_continuous COMPILED ON: Jan 23 2022, AT: 20:06:53
+
+INFO: cmn_live.c(120): Update from < 11.64  0.15 -0.04  0.17 -0.40 -0.03 -0.50 -0.13 -0.33 -0.11 -0.19 -0.10 -0.24 >
+INFO: cmn_live.c(138): Update to   < 10.01  0.44  0.02 -0.14 -0.39 -0.21 -0.15 -0.30 -0.21 -0.24 -0.12 -0.17 -0.20 >
+INFO: fsg_search.c(859): 240 frames, 2029 HMMs (8/fr), 7756 senones (32/fr), 546 history entries (2/fr)
+
+INFO: fsg_search.c(869): fsg 0.05 CPU 0.022 xRT
+INFO: fsg_search.c(871): fsg 0.05 wall 0.022 xRT
+ERROR: "fsg_search.c", line 940: Final result does not match the grammar in frame 240
+INFO: cmn_live.c(120): Update from < 10.01  0.44  0.02 -0.14 -0.39 -0.21 -0.15 -0.30 -0.21 -0.24 -0.12 -0.17 -0.20 >
+INFO: cmn_live.c(138): Update to   < 10.57  0.53 -0.08 -0.13 -0.42 -0.18 -0.19 -0.31 -0.16 -0.27 -0.12 -0.18 -0.21 >
+INFO: fsg_search.c(859): 318 frames, 5538 HMMs (17/fr), 15752 senones (49/fr), 1244 history entries (3/fr)
+
+INFO: fsg_search.c(869): fsg 0.10 CPU 0.030 xRT
+INFO: fsg_search.c(871): fsg 0.10 wall 0.030 xRT
+обогреватель сделай горячее
+INFO: cmn_live.c(120): Update from < 10.57  0.53 -0.08 -0.13 -0.42 -0.18 -0.19 -0.31 -0.16 -0.27 -0.12 -0.18 -0.21 >
+INFO: cmn_live.c(138): Update to   < 10.57  0.53 -0.08 -0.13 -0.42 -0.18 -0.19 -0.31 -0.16 -0.27 -0.12 -0.18 -0.21 >
+INFO: fsg_search.c(859): 0 frames, 0 HMMs (0/fr), 0 senones (0/fr), 2 history entries (0/fr)
+
+INFO: fsg_search.c(265): TOTAL fsg 0.15 CPU 0.028 xRT
+INFO: fsg_search.c(268): TOTAL fsg 0.15 wall 0.028 xRT
+[04.18.2022 22:58:10 | INFO | CLIENT_1]: START Client1!
+[04.18.2022 22:58:15 | INFO | CLIENT_1]: 8291
+[04.18.2022 22:58:42 | INFO | CLIENT_1]: START Client1!
+[04.18.2022 22:58:46 | INFO | CLIENT_1]: 8294
+[04.18.2022 22:58:51 | INFO | CLIENT_1]: 8291
+[04.18.2022 22:59:10 | INFO | CLIENT_1]: START Client1!
+[04.18.2022 22:59:14 | INFO | CLIENT_1]: 8532
+[04.18.2022 22:59:19 | INFO | CLIENT_1]: -1
+[04.18.2022 22:59:23 | INFO | CLIENT_1]: 8291
+[04.18.2022 22:59:27 | INFO | CLIENT_1]: 8294
+[04.18.2022 22:59:32 | INFO | CLIENT_1]: 8291
+[04.18.2022 22:59:36 | INFO | CLIENT_1]: 8294
+[04.18.2022 22:59:41 | INFO | CLIENT_1]: 8291
+[04.20.2022 21:40:05 | INFO | CLIENT_1]: START Client1!
+[04.20.2022 21:40:09 | INFO | CLIENT_1]: SENDED1 RESULT
+[04.20.2022 21:40:13 | INFO | CLIENT_1]: SENDED1 RESULT
+[04.20.2022 21:40:18 | INFO | CLIENT_1]: SENDED1 RESULT
+[04.20.2022 21:41:16 | INFO | CLIENT_1]: START Client1!
+[04.20.2022 21:41:21 | INFO | CLIENT_1]: File Sended
+[04.20.2022 21:41:25 | INFO | CLIENT_1]: File Sended
+[04.20.2022 21:41:29 | INFO | CLIENT_1]: File Sended
+[04.20.2022 21:41:34 | INFO | CLIENT_1]: SENDED1 RESULT
+[04.20.2022 21:41:38 | INFO | CLIENT_1]: SENDED1 RESULT
+[04.20.2022 21:41:43 | INFO | CLIENT_1]: File Sended
+[04.20.2022 21:41:43 | INFO | CLIENT_2]: START Client_2!
+[04.20.2022 21:41:43 | INFO | CLIENT_3]: START Client_3!
+[04.20.2022 21:41:43 | INFO | CLIENT_2]: START Client_2!
+[04.20.2022 21:41:43 | INFO | CLIENT_3]: START Client_3!
+[04.20.2022 21:42:53 | INFO | CLIENT_1]: START Client1!
+[04.20.2022 21:42:57 | INFO | CLIENT_1]: File Sended
+[04.20.2022 21:43:02 | INFO | CLIENT_1]: File Sended
+[04.20.2022 21:43:06 | INFO | CLIENT_1]: File Sended
+[04.20.2022 21:43:10 | INFO | CLIENT_1]: SENDED1 RESULT
+[04.20.2022 21:43:15 | INFO | CLIENT_1]: SENDED1 RESULT
+[04.20.2022 21:43:19 | INFO | CLIENT_1]: File Sended
+[04.20.2022 21:43:23 | INFO | CLIENT_1]: File Sended
+[04.20.2022 21:43:28 | INFO | CLIENT_1]: File Sended
+[04.20.2022 21:43:32 | INFO | CLIENT_1]: File Sended
+[04.20.2022 21:43:35 | INFO | CLIENT_2]: START Client_2!
+[04.20.2022 21:43:35 | INFO | CLIENT_3]: START Client_3!
+[04.20.2022 21:43:35 | INFO | CLIENT_2]: START Client_2!
+[04.20.2022 21:43:35 | INFO | CLIENT_3]: START Client_3!
+[04.20.2022 21:43:35 | INFO | CLIENT_2]: START Client_2!
+[04.20.2022 21:43:35 | INFO | CLIENT_3]: START Client_3!
+[04.20.2022 21:43:35 | INFO | CLIENT_2]: START Client_2!
+[04.20.2022 21:43:35 | INFO | CLIENT_3]: START Client_3!
+[04.20.2022 21:43:59 | INFO | CLIENT_1]: START Client1!
+[04.20.2022 21:44:03 | INFO | CLIENT_1]: File Sended
+[04.20.2022 21:44:08 | INFO | CLIENT_1]: File Sended
+[04.20.2022 21:44:12 | INFO | CLIENT_1]: File Sended
+[04.20.2022 21:44:16 | INFO | CLIENT_1]: SENDED1 RESULT
+[04.20.2022 21:44:21 | INFO | CLIENT_1]: SENDED1 RESULT
+[04.20.2022 21:44:25 | INFO | CLIENT_1]: File Sended
+[04.20.2022 21:44:29 | INFO | CLIENT_1]: File Sended
+[04.20.2022 21:44:34 | INFO | CLIENT_1]: File Sended
+[04.20.2022 21:44:35 | INFO | CLIENT_2]: START Client_2!
+[04.20.2022 21:44:35 | INFO | CLIENT_3]: START Client_3!
+[04.20.2022 21:44:35 | INFO | CLIENT_2]: START Client_2!
+[04.20.2022 21:44:35 | INFO | CLIENT_3]: START Client_3!
+[04.20.2022 21:44:35 | INFO | CLIENT_2]: START Client_2!
+[04.20.2022 21:44:35 | INFO | CLIENT_3]: START Client_3!
+[04.20.2022 21:44:35 | INFO | CLIENT_2]: START Client_2!
+[04.20.2022 21:44:35 | INFO | CLIENT_3]: START Client_3!
+[04.20.2022 21:44:56 | INFO | CLIENT_1]: START Client1!
+[04.20.2022 21:45:00 | INFO | CLIENT_1]: File Sended
+[04.20.2022 21:45:04 | INFO | CLIENT_1]: File Sended
+[04.20.2022 21:45:09 | INFO | CLIENT_1]: File Sended
+[04.20.2022 21:45:13 | INFO | CLIENT_1]: SENDED1 RESULT
+[04.20.2022 21:45:17 | INFO | CLIENT_1]: SENDED1 RESULT
+[04.20.2022 21:45:22 | INFO | CLIENT_1]: File Sended
+[04.20.2022 21:45:26 | INFO | CLIENT_1]: File Sended
+[04.20.2022 21:45:31 | INFO | CLIENT_1]: File Sended
+[04.20.2022 21:45:35 | INFO | CLIENT_1]: File Sended
+[04.20.2022 21:45:39 | INFO | CLIENT_1]: File Sended
+[04.20.2022 21:45:39 | INFO | CLIENT_2]: START Client_2!
+[04.20.2022 21:45:39 | INFO | CLIENT_3]: START Client_3!
+[04.20.2022 21:45:40 | INFO | CLIENT_2]: START Client_2!
+[04.20.2022 21:45:40 | INFO | CLIENT_3]: START Client_3!
+[04.20.2022 21:45:40 | INFO | CLIENT_2]: START Client_2!
+[04.20.2022 21:45:40 | INFO | CLIENT_3]: START Client_3!
+[04.20.2022 21:45:40 | INFO | CLIENT_2]: START Client_2!
+[04.20.2022 21:45:40 | INFO | CLIENT_3]: START Client_3!
+[04.20.2022 21:45:41 | INFO | CLIENT_2]: START Client_2!
+[04.20.2022 21:45:41 | INFO | CLIENT_3]: START Client_3!

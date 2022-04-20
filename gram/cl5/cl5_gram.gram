@@ -2,10 +2,10 @@
 
 grammar cmdGrammar;
 
-public <basicCmd> = <start> <cmdCamerа>;
+public <cmdGrammar> = <start> <cmdCamerа>;
 <cmdCamerа> = <actioncamera> <camera> <pretext> <locationCamera>;
-<actioncamera> = (включи|выключи);
+<actioncamera> = (включи | выключи);
 <camera> = (камеру);
 <pretext> = (в);
-<locationCamera> = (зале|комнате|прихожей);
+<locationCamera> = (зале | комнате | прихожей);
 <start> = [умный дом | дом];

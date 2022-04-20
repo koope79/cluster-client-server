@@ -1,10 +1,9 @@
-#JSGF V1.0;
+#JSGF V1.0 ISO8859-5;
 
-grammar cmdGrammar;
+grammar basicCmd;
 
 public <basicCmd> = <start> <cmdHeater>;
-<cmdHeater> = <heater> <actionHeater> <parameterHeater>;
-<heater> = (обогреватель);
-<actionHeater> = (сделай);
-<parameterHeater> = (горячее|холоднее);
+
+<cmdHeater> = (обогреватель) (сделай) ( горячее | холоднее );
+
 <start> = [умный дом | дом];

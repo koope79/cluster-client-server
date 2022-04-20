@@ -2,10 +2,9 @@
 
 grammar cmdGrammar;
 
-public <basicCmd> = <start> <cmdLamp>;
+public <cmdGrammar> = <start> <cmdLamp>;
 
-<cmdLamp> = <actionLamp> <directionLamp> <lamp>;
-<actionLamp> = (включи|выключи);
-<directionLamp> = (правую|левую|центральную);
-<lamp> = (лампу);
+<cmdLamp> = (включи | выключи) (правую | левую | центральную) (лампу);
+
 <start> = [умный дом | дом];
+

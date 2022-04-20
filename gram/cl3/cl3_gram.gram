@@ -2,8 +2,8 @@
 
 grammar cmdGrammar;
 
-public <basicCmd> = <start> <cmdWindow>;
-<cmdWindow> = <actionWindow> <window>;
-<actionWindow> = (открой|закрой);
-<window> = (окно);
+public <cmdGrammar> = <start> <cmdAlert>;
+<cmdAlert> = <actionAlert> <alert>;
+<actionAlert> = (активируй | отключи);
+<alert> = (сигнализацию);
 <start> = [умный дом | дом];
