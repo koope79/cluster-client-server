@@ -1,0 +1,12 @@
+#JSGF V1.0;
+
+grammar cmdGrammar;
+
+public <cmdGrammar> = <start> <cmdAlert>;
+<cmdAlert> = <actionAlert> <alert> <pretext> <parameterAlert> <clock>;
+<alert> = (будильник);
+<actionAlert> = (поставь);
+<parameterAlert> = (шесть | семь | восемь);
+<clock> = (часов);
+<pretext> = (на);
+<start> = [умный дом | дом];

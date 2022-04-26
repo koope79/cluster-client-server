@@ -1,0 +1,12 @@
+#JSGF V1.0;
+
+grammar cmdGrammar;
+
+public <cmdGrammar> = <start> <cmdCondi>;
+<cmdCondi> = <actionCondi> <condi> <pretext> <parameterCondi> <degree>;
+<condi> = (кондиционер);
+<actionCondi> = (включи);
+<parameterCondi> = (восемнадцать | девятнадцать | двадцать);
+<degree> = (градусов);
+<pretext> = (на);
+<start> = [умный дом | дом];

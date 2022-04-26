@@ -1,0 +1,12 @@
+#JSGF V1.0;
+
+grammar cmdGrammar;
+
+public <cmdGrammar> = <start> <cmdMirror>;
+<cmdMirror> = <actionMirror> <mirror> <pretext> <parameterMirror> <percent>;
+<mirror> = (зеркальный свет);
+<actionMirror> = (включи);
+<parameterMirror> = (сорок | семьдесят | сто);
+<percent> = (процентов);
+<pretext> = (на);
+<start> = [умный дом | дом];

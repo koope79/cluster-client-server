@@ -1,0 +1,11 @@
+#JSGF V1.0;
+
+grammar cmdGrammar;
+
+public <cmdGrammar> = <start> <cmdCleaner>;
+<cmdCleaner> = <actionCleaner> <floor> <pretext> <parameterCleaner>;
+<floor> = (пол);
+<actionCleaner> = (пропылесось);
+<parameterCleaner> = (комнате | кухне | балконе);
+<pretext> = (в | на);
+<start> = [умный дом | дом];

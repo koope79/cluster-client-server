@@ -1,0 +1,9 @@
+#JSGF V1.0 ISO8859-5;
+
+grammar basicCmd;
+
+public <basicCmd> = <start> <cmdCurtains>;
+
+<cmdCurtains> = (закрой | открой) (автоматические шторы);
+
+<start> = [умный дом | дом];
